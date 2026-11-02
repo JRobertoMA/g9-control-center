@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>G9 Control</title>
+  <!-- G: anillo (R 100 / r 74) abierto arriba a la derecha; su extremo inferior se corta a la altura del riel (y 121) -->
+  <path fill="#000" d="M227.75,121 A100,100 0 1,1 192.28,51.40 L175.57,71.31 A74,74 0 1,0 201.67,121 Z"/>
+  <!-- Riel fino del deslizador y botón macizo -->
+  <rect fill="#000" x="140" y="121" width="74" height="14"/>
+  <circle fill="#000" cx="140" cy="128" r="30"/>
+</svg>

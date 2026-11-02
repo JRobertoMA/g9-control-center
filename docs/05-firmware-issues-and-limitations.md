@@ -1,0 +1,61 @@
+# Firmware issues and limitations
+
+**English** · [Español](es/05-fallos-y-limitaciones.md)
+
+Abnormal behavior found with firmware 0.10 (GCM 2.8). G9 Control takes it into account; any other tool that talks GCM to this controller should too.
+
+## Macros with more than 11 events
+
+The controller accepts 12 events split into two packages (`01` with 11 and `FF` with the last one), but:
+
+1. **The last package’s acknowledgment is broken:** `53 FF 0A 03 00 32`, which are the first bytes of the request, with no valid checksum.
+2. **The controller hangs ⚠️.** After reading a multi‑package macro, the next event read (`53 FE`), for the same button or another one, gets no response, and **about 16 seconds later the controller reboots** (it disconnects and reconnects). Reading the macro to the end does not prevent it. Only rebooting the controller fixes it (unplug and plug it back in). Other queries keep working in the meantime.
+3. A write acknowledged right before the hang **may not be saved**.
+
+In testing, no configuration was lost in any of the reboots.
+
+**Reading several packages:** requesting package n returns package n+1 (`53 FE … 00` → package `01`; `53 FE … 01` → package `FF`).
+
+**Recommendation:** use macros of **11 events at most** (a single package, index `00`). If a multi‑package macro already exists (for example, created with the official app), read it once and do not send `53 FE` again until the controller is reconnected. Then delete it with `53 FC`.
+
+## Checksum +1 in the remap of a macro button
+
+Reading the remap of a button that runs a macro returns `1F 00 <button> FF FF <sum8 + 1>`. For example, `1F 00 03 FF FF 21` when the sum is `20`. If a correct checksum is required, that response is discarded and the read fails. It has to be accepted as a special case.
+
+## Ring color is rounded
+
+When storing a color, the controller rounds it down (H 179 → 178, B 25 → 24), and every rewrite of the read value darkens it a bit more. To get an exact value, write the target plus the observed difference. Verify with a tolerance of ±2.
+
+## Ring byte 10
+
+The controller ignores writes to that byte (the official app calls it “brightness”). Only the factory reset changes it (to 128). The actual brightness is the color’s B.
+
+## The “DS5” mode value leads to Xbox
+
+`08 02 07 01 08 01`, the value other GameSir controllers use for DS5, puts the G9 2026 into **Xbox mode**. Value 11 (X‑INPUT) is rejected. There is no known way to go from Android straight to DS5. In Xbox there is no configuration channel: going back requires View + Menu.
+
+## GAME_HUB submode
+
+The official app sets submode `03` (GAME_HUB) every time it connects. In that submode the controller also sends **its input state over the configuration channel** (64‑byte packets starting with `43`). Ignore them or go back to submode `01` with `08 02 07 01 01 01`.
+
+## The mode blink depends on the Home light
+
+The color blink that shows the mode (green Xbox, white DS5, blue Android) comes out of the Home LED. With **low Home saturation and brightness**, that blink **is not visible**: the LED stays off when switching modes, although the switch happens. Raise the Home saturation and brightness if you want to see it ([Home light](03-settings.md#home-light-05-08)).
+
+## The official app can overwrite the configuration
+
+Using “Restore default” in the official app returns the controller to the [factory defaults](03-settings.md#factory-defaults) without further warning. If you switch between apps, save a backup or a profile first.
+
+## Controller limitations
+
+| Feature | Status |
+|---|---|
+| Two keys at once on a back button (via remap or macro) | ❌ Not supported |
+| Turbo | Controller buttons only; cannot be read or written |
+| Calibration | Controller buttons only (View + Menu + Home) |
+| Gyroscope | None |
+| Trigger vibration | Does not seem to have trigger motors |
+| Trigger travel switches | Mechanical; cannot be read |
+| Input type (`08 03`), turbo key binding (`56`) | Do not respond |
+| Command `15` (“restore configuration”) | Unknown format; not used |
+| Firmware update | Out of this project’s scope |
