@@ -46,7 +46,9 @@ To the maximum extent permitted by applicable law, **the authors shall not be li
 
 ## 6. Privacy
 
-G9 Control **does not request internet access**, does not collect personal data, contains no ads or analytics and sends no information to any server. It only talks to the controller over USB. Backups, profiles and logs are stored in the app’s storage on your device. Backups include the controller’s unique identifier (chip ID): do not share them. Profiles do not include it, so they can be shared.
+G9 Control contains no ads or analytics and sends nothing on its own. It only uses the internet when you tap **Send diagnostics**, after a preview of exactly what is sent (controller and tablet data, configuration and log, **without the chip ID**); it is kept for 90 days. Details: [privacy policy](PRIVACY.md). Backups, profiles and logs are stored in the app’s storage on your device. Backups include the controller’s unique identifier (chip ID): do not share them. Profiles do not include it, so they can be shared.
+
+The optional **accessibility service** (“Using the tablet with the controller attached”) only filters the keys of a G9 controller to run system actions (notifications, quick settings, recents, home, back), simulates the navigation‑bar gesture that opens Circle to Search, and draws the on‑screen handle. It does not read the screen or the content of other apps, does not record keys and stores nothing. It is off until you enable it in Android’s Accessibility settings.
 
 ## 7. Law
 

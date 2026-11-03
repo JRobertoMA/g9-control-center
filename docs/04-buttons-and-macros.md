@@ -16,7 +16,7 @@ The protocol uses two code spaces:
 | HID | Key | HID | Key | HID | Key |
 |---|---|---|---|---|---|
 | `B0`–`B3` | D‑pad ↑ ↓ ← → | `BA` / `BB` | LB / RB | `C0` / `C1` | L3 / R3 |
-| `B4` / `B5` | A / B | `BC` / `BD` | View / Menu | `C2` | Home (not remappable) |
+| `B4` / `B5` | A / B | `BC` / `BD` | View / Menu | `C2` | Home |
 | `B7` / `B8` | X / Y | `BE` / `BF` | LT / RT | `EF`–`F6` | Left stick ← ↖ ↑ ↗ → ↘ ↓ ↙ |
 | | | | | `F7`–`FE` | Right stick (same directions) |
 
@@ -42,6 +42,8 @@ Examples checked with `getevent`:
 | `1F 01 04 F1 00 15` (R5 → left stick ↑) | `ABS_Y` fully up and back to center |
 
 - **Over the protocol all four assignments fit at once.** With the controller’s M + button shortcut, however, only one is kept: assigning a back button clears the others.
+- **Extra keys: only Home.** A back button can only emit buttons the controller physically has. Codes for buttons it lacks (C, Z, B1–B8, Power…) are stored as **A**; Capture (`D4`) is accepted but emits nothing.
+- ✅ **Home (`C2`) works as a target** (checked with `getevent` in Android mode): the back button sends `BTN_MODE` (Android’s `KEYCODE_BUTTON_MODE`, the Guide/Home key) **right away and for as long as it is held**. The physical Home only sends that key after being held for ~1.7 s (a tap sends nothing; a double tap goes to the home screen). Use: assign `1F 01 04 C2 00 E6` (R5 → Home) and bind a launcher action to it, e.g. DroidDeck’s Quick Access Menu (tested). Note it is the same key as the physical Home.
 - ❌ **Two keys at once are not possible.** `1F 01 03 C0 C1` (L5 → L3 + R3) is acknowledged, but the controller only stores the first key. For a combination such as L3 + R3 (RetroArch menu), assign one key to each back button and press them together.
 
 ## Macros (`53`)

@@ -16,7 +16,7 @@ El protocolo usa dos espacios de códigos:
 | HID | Tecla | HID | Tecla | HID | Tecla |
 |---|---|---|---|---|---|
 | `B0`–`B3` | Cruceta ↑ ↓ ← → | `BA` / `BB` | LB / RB | `C0` / `C1` | L3 / R3 |
-| `B4` / `B5` | A / B | `BC` / `BD` | Vista / Menú | `C2` | Home (no remapeable) |
+| `B4` / `B5` | A / B | `BC` / `BD` | Vista / Menú | `C2` | Home |
 | `B7` / `B8` | X / Y | `BE` / `BF` | LT / RT | `EF`–`F6` | Stick izq. ← ↖ ↑ ↗ → ↘ ↓ ↙ |
 | | | | | `F7`–`FE` | Stick der. (mismas direcciones) |
 
@@ -42,6 +42,8 @@ Ejemplos comprobados con `getevent`:
 | `1F 01 04 F1 00 15` (R5 → stick izq. ↑) | `ABS_Y` a tope arriba y vuelta al centro |
 
 - **Desde el protocolo caben las cuatro asignaciones a la vez.** Con el atajo M + botón del mando, en cambio, solo se conserva una: asignar un botón trasero borra la asignación de los demás.
+- **Teclas extra: solo Home.** Un botón trasero solo puede emitir botones que el mando tiene físicamente. Los códigos de botones que no tiene (C, Z, B1–B8, Power…) se guardan como **A**; Captura (`D4`) se acepta pero no emite nada.
+- ✅ **Home (`C2`) funciona como destino** (comprobado con `getevent` en modo Android): el botón trasero envía `BTN_MODE` (en Android, `KEYCODE_BUTTON_MODE`, la tecla Guide/Home) **al instante y mientras se mantiene**. El Home físico solo envía esa tecla tras mantenerlo ~1,7 s (un toque no envía nada; un doble toque va al inicio). Uso: asigna `1F 01 04 C2 00 E6` (R5 → Home) y vincula una acción del launcher a esa tecla, por ejemplo el *Quick Access Menu* de DroidDeck (probado). Ojo: es la misma tecla que el Home físico.
 - ❌ **Dos teclas a la vez no son posibles.** `1F 01 03 C0 C1` (L5 → L3 + R3) se acusa, pero el mando solo guarda la primera tecla. Para una combinación como L3 + R3 (menú de RetroArch), asigna una tecla a cada botón trasero y púlsalos juntos.
 
 ## Macros (`53`)

@@ -42,6 +42,23 @@ The official app sets submode `03` (GAME_HUB) every time it connects. In that su
 
 The color blink that shows the mode (green Xbox, white DS5, blue Android) comes out of the Home LED. With **low Home saturation and brightness**, that blink **is not visible**: the LED stays off when switching modes, although the switch happens. Raise the Home saturation and brightness if you want to see it ([Home light](03-settings.md#home-light-05-08)).
 
+## Headphone jack
+
+Tested with three different headphones:
+
+| Mode | Headphones |
+|---|---|
+| **Android** | ✅ Work: Android sees the controller as a USB headset (output and microphone) |
+| Xbox | ❌ No sound: the controller exposes no audio; the tablet plays it |
+| DS5 | ❌ No sound: the controller exposes DualSense‑style audio, but Android only creates the microphone; the tablet plays it |
+
+**Volume is low** even with Android at maximum:
+- Home + D‑pad ↑/↓ only sends normal volume keys to Android;
+- the official app has no audio command;
+- the USB sound card’s own volume cannot be reached without root.
+
+G9 Control cannot raise it.
+
 ## The official app can overwrite the configuration
 
 Using “Restore default” in the official app returns the controller to the [factory defaults](03-settings.md#factory-defaults) without further warning. If you switch between apps, save a backup or a profile first.
@@ -58,4 +75,5 @@ Using “Restore default” in the official app returns the controller to the [f
 | Trigger travel switches | Mechanical; cannot be read |
 | Input type (`08 03`), turbo key binding (`56`) | Do not respond |
 | Command `15` (“restore configuration”) | Unknown format; not used |
+| Turning the controller off on demand | ❌ No power‑off command; the sleep‑time command (`26`) gets no response; cutting USB power needs root. It sleeps after 10 minutes idle. You can turn its lights off (rings “Off”, Home at minimum) |
 | Firmware update | Out of this project’s scope |

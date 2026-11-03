@@ -30,6 +30,15 @@ All endpoints are 64‑byte *interrupt* endpoints.
 - On Android the standard USB Host API is enough (`claimInterface` + `bulkTransfer`, which also works on *interrupt* endpoints) plus the normal USB permission. No root needed.
 - While interface 1 is claimed, the gamepad (interface 0) keeps working normally.
 
+### With headphones plugged in
+
+Plugging something into the 3.5 mm jack makes the controller **disconnect and re‑enumerate** with three USB Audio interfaces in front of the two HID ones:
+- audio control;
+- 48 kHz 16‑bit stereo output on `0x04`;
+- 48 kHz 16‑bit mono microphone input on `0x84`.
+
+The GCM channel becomes interface 4. Unplugging goes back to the two HID interfaces. See [audio](05-firmware-issues-and-limitations.md#headphone-jack).
+
 ## Connection modes
 
 The controller has three modes. When it changes mode it **disconnects and reconnects** with a different USB identity:

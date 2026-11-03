@@ -42,6 +42,23 @@ La app oficial pone el submodo `03` (GAME_HUB) cada vez que se conecta. En ese s
 
 El parpadeo de color que indica el modo (verde Xbox, blanco DS5, azul Android) sale por el LED del Home. Con la **saturación y el brillo del Home bajos**, ese aviso **no se ve**: el LED se queda apagado al cambiar de modo, aunque el cambio se produce. Sube la saturación y el brillo del Home si quieres ver el aviso ([luz del Home](03-ajustes.md#luz-del-home-05-08)).
 
+## Jack de auriculares
+
+Probado con tres auriculares distintos:
+
+| Modo | Auriculares |
+|---|---|
+| **Android** | ✅ Funcionan: Android ve el mando como unos auriculares USB (salida y micrófono) |
+| Xbox | ❌ Sin sonido: el mando no ofrece audio; suena la tablet |
+| DS5 | ❌ Sin sonido: el mando ofrece audio como un DualSense, pero Android solo crea el micrófono; suena la tablet |
+
+**El volumen es bajo** incluso con Android al máximo:
+- Home + cruceta ↑/↓ solo envía teclas de volumen normales a Android;
+- la app oficial no tiene ningún comando de audio;
+- el volumen propio de la tarjeta de sonido USB no es accesible sin root.
+
+G9 Control no puede subirlo.
+
 ## La app oficial puede sobrescribir la configuración
 
 Usar “Restore default” en la app oficial devuelve el mando a los [valores de fábrica](03-ajustes.md#valores-de-fábrica) sin más aviso. Si alternas entre apps, guarda antes un respaldo o un perfil.
@@ -58,4 +75,5 @@ Usar “Restore default” en la app oficial devuelve el mando a los [valores de
 | Interruptores de recorrido de los gatillos | Mecánicos; no se pueden leer |
 | Tipo de entrada (`08 03`), asignación con turbo (`56`) | No responden |
 | Comando `15` (“restaurar configuración”) | Formato desconocido; no se usa |
+| Apagar el mando a voluntad | ❌ No hay orden de apagado; el comando de tiempo de reposo (`26`) no responde; cortar la alimentación USB requiere root. Se duerme tras 10 minutos sin uso. Sí puedes apagar sus luces (anillos en «Apagado», Home al mínimo) |
 | Actualización de firmware | Fuera del alcance de este proyecto |

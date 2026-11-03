@@ -46,7 +46,9 @@ En la máxima medida que permita la ley aplicable, **los autores no serán respo
 
 ## 6. Privacidad
 
-G9 Control **no solicita acceso a internet**, no recopila datos personales, no contiene publicidad ni analíticas y no envía información a ningún servidor. Solo se comunica con el mando por USB. Los respaldos, perfiles y registros se guardan en el almacenamiento de la app en tu dispositivo. Los respaldos incluyen el identificador único del mando (ID de chip): no los compartas. Los perfiles no lo incluyen, así que se pueden compartir.
+G9 Control no contiene publicidad ni analíticas y no envía nada por su cuenta. Solo usa internet cuando pulsas **Enviar diagnóstico**, tras una vista previa de exactamente lo que se envía (datos del mando y de la tablet, configuración y registro, **sin el ID de chip**); se guarda 90 días. Detalles: [política de privacidad](PRIVACIDAD.md). Los respaldos, perfiles y registros se guardan en el almacenamiento de la app en tu dispositivo. Los respaldos incluyen el identificador único del mando (ID de chip): no los compartas. Los perfiles no lo incluyen, así que se pueden compartir.
+
+El **servicio de accesibilidad** opcional («Usar la tablet con el mando») solo filtra las teclas de un mando G9 para ejecutar acciones del sistema (notificaciones, ajustes rápidos, recientes, inicio, atrás), simula el gesto de la barra de navegación que abre «Rodea para buscar» y dibuja el asa en pantalla. No lee la pantalla ni el contenido de otras apps, no registra teclas y no guarda nada. Está desactivado hasta que lo actives en los ajustes de Accesibilidad de Android.
 
 ## 7. Legislación
 

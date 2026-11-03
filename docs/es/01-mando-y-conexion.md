@@ -30,6 +30,15 @@ Todos los endpoints son *interrupt* de 64 bytes.
 - En Android basta con la API USB Host estándar (`claimInterface` + `bulkTransfer`, que también sirve para endpoints *interrupt*) y el permiso USB normal. No hace falta root.
 - Al reclamar la interfaz 1, el gamepad (interfaz 0) sigue funcionando con normalidad.
 
+### Con auriculares enchufados
+
+Al enchufar algo en el jack de 3,5 mm, el mando **se desconecta y se vuelve a enumerar** con tres interfaces USB Audio delante de las dos HID:
+- control de audio;
+- salida de 48 kHz, 16 bits, estéreo, por `0x04`;
+- entrada de micrófono de 48 kHz, 16 bits, mono, por `0x84`.
+
+El canal GCM pasa a ser la interfaz 4. Al desenchufar, vuelve a las dos HID. Ver [audio](05-fallos-y-limitaciones.md#jack-de-auriculares).
+
 ## Modos de conexión
 
 El mando tiene tres modos. Al cambiar de modo **se desconecta y vuelve a conectarse** con otra identidad USB:
