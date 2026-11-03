@@ -2,6 +2,14 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.10.0‑beta.2 — 2026‑11‑02 (versión de prueba)
+
+- **Prueba guiada para mandos experimentales** (G9 无极 y otros modelos Legion):
+  - prueba cada ajuste paso a paso: escribe un valor de prueba, lo relee, te pide comprobarlo (o detecta el botón solo) y vuelve a poner tu valor;
+  - antes guarda un respaldo, y al final lo compara todo con él;
+  - las áreas que pasan se desbloquean en tu tablet, y los resultados se envían con un toque.
+- El actualizador acepta etiquetas de versión con guiones tipográficos.
+
 ## 0.10.0‑beta.1 — 2026‑11‑02 (versión de prueba)
 
 Incluye todo lo de la 0.9.0‑beta.2, que no llegó a publicarse firmada.

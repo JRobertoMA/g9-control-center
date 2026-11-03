@@ -2,6 +2,14 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.10.0‑beta.2 — 2026‑11‑02 (test version)
+
+- **Guided test for experimental controllers** (G9 无极 and other Legion models):
+  - it tests each setting step by step: writes a test value, reads it back, asks you to check it (or detects the button by itself) and puts your value back;
+  - a backup is saved first, and at the end everything is compared with it;
+  - areas that pass are unlocked on your tablet, and the results can be sent with one tap.
+- The updater accepts version tags with typographic hyphens.
+
 ## 0.10.0‑beta.1 — 2026‑11‑02 (test version)
 
 Includes everything listed under 0.9.0‑beta.2, which was never published as a signed release.

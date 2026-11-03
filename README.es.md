@@ -19,6 +19,7 @@ El código fuente no se publica por ahora.
 
 | Versión | Archivo | SHA‑256 |
 |---|---|---|
+| 0.10.0‑beta.2 (versión de prueba) | `G9Control-0.10.0-beta.2.apk` (en *Releases*) | `fff9c86b3db57b5cbdc5bebca75be61c1c9e4848afd2acc709c56d635b8e6908` |
 | 0.10.0‑beta.1 (versión de prueba) | `G9Control-0.10.0-beta.1.apk` (en *Releases*) | `bb52991e2a0be2f0bfdb6fcdedd78c42bb3deb9eea58d9ccd1d190c930479239` |
 | 0.8.0 | `G9Control-0.8.0.apk` (en *Releases*) | `b004fc7c4bffaa020eb291a90c79106455aa28b3ce7489be17fb71e564b513df` |
 

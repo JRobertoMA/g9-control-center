@@ -87,6 +87,21 @@ In full‑screen apps, the controller’s frame makes it hard to swipe from the 
 - **Turning it on:** **Controller** section → “Using the tablet with the controller attached” card → **Enable in Accessibility**. If Android says the setting is restricted (the app does not come from a store), open **App info** → ⋮ → “Allow restricted settings” and try again.
 - **Privacy:** the service only looks at the G9’s buttons; it does not read the screen, store anything or use the internet; it only simulates the navigation‑bar gestures.
 
+## Guided test (experimental controllers)
+
+If your controller shows the red “experimental support” band, tap **Guided test** in it. With the controller connected in Android mode and its configuration read, the test:
+
+1. Saves a backup.
+2. Goes through each setting, one step at a time:
+   - it writes a test value and reads it back;
+   - when needed, it asks you to check it (for example, are the rings red?) or to press a button, which it detects by itself;
+   - it puts your value back.
+3. At the end, reads everything again and compares it with the backup.
+4. Unlocks on your tablet the areas that passed, so you can then change those settings normally.
+5. Lets you **send the results**.
+
+**Stop and restore** puts everything back at any moment. The mode‑switch step is optional: to return from Xbox mode, hold View + Menu for 2 s twice.
+
 ## Updating the app
 
 **Controller** section → **App updates**:

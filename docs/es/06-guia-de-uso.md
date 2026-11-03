@@ -87,6 +87,21 @@ En apps a pantalla completa, el marco del mando dificulta deslizar desde el bord
 - **Activarlo:** sección **Mando** → tarjeta «Usar la tablet con el mando» → **Activar en Accesibilidad**. Si Android dice que el ajuste está restringido (la app no viene de una tienda), abre **Ficha de la app** → ⋮ → «Permitir ajustes restringidos» y vuelve a intentarlo.
 - **Privacidad:** el servicio solo mira los botones del G9; no lee la pantalla, no guarda nada y no usa internet; solo simula los gestos de la barra de navegación.
 
+## Prueba guiada (mandos experimentales)
+
+Si tu mando muestra la banda roja de «soporte experimental», pulsa en ella **Prueba guiada**. Con el mando conectado en modo Android y su configuración leída, la prueba:
+
+1. Guarda un respaldo.
+2. Recorre cada ajuste, un paso cada vez:
+   - escribe un valor de prueba y lo relee;
+   - si hace falta, te pide comprobarlo (por ejemplo, ¿se ven rojos los anillos?) o pulsar un botón, que detecta sola;
+   - vuelve a poner tu valor.
+3. Al final relee todo y lo compara con el respaldo.
+4. Desbloquea en tu tablet las áreas que pasaron, para que puedas cambiar esos ajustes normalmente.
+5. Te deja **enviar los resultados**.
+
+**Detener y restaurar** lo deja todo como estaba en cualquier momento. El paso del cambio de modo es opcional: para volver del modo Xbox, mantén Vista + Menú 2 s dos veces.
+
 ## Actualizar la app
 
 Sección **Mando** → **Actualizaciones de la app**:
