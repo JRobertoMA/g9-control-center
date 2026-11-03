@@ -37,12 +37,12 @@ Leer: `07 <zona> 06 00 00 sum8`. Escribir: `07 <zona> 06 01 <valor> sum8`. El ma
 
 | Zona | Ajuste | Rango en G9 Control | Fábrica |
 |---|---|---|---|
-| `01` / `02` | Stick izq. / der. · zona interna | 0–50 | 10 |
-| `03` / `04` | Stick izq. / der. · zona externa | 50–100 | 100 |
-| `05` / `06` | LT / RT · zona inicial | 0–50 | 5 |
-| `07` / `08` | LT / RT · zona final | 50–100 | 95 |
+| `01` / `02` | Stick izq. / der. · zona interna | 0–99 | 10 |
+| `03` / `04` | Stick izq. / der. · zona externa | 1–100 | 100 |
+| `05` / `06` | LT / RT · zona inicial | 0–99 | 5 |
+| `07` / `08` | LT / RT · zona final | 1–100 | 95 |
 
-Los valores son porcentajes del recorrido. No se ha comprobado qué hace el mando con valores fuera de esos rangos. La zona interna se aplica **reescalando**: la salida sube suave desde 0, sin salto. Ejemplo: `07 01 06 01 0F 1E` pone la zona interna del stick izquierdo en 15.
+Los valores son porcentajes del recorrido. Los rangos son los de la app oficial: la interna (o inicial) siempre por debajo de la externa (o final). La zona interna se aplica **reescalando**: la salida sube suave desde 0, sin salto. Ejemplo: `07 01 06 01 0F 1E` pone la zona interna del stick izquierdo en 15.
 
 ## Gatillo rápido (`21`)
 

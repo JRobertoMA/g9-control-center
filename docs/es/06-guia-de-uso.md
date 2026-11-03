@@ -22,7 +22,7 @@ Cada cambio se escribe en el mando, se confirma y **se vuelve a leer para verifi
 En las secciones de ajustes, el botón flotante **Restaurar respaldo** (abajo a la derecha) vuelve a escribir los ajustes de esa sección con el respaldo más reciente.
 
 ### Sticks
-- **Zona muerta** de cada stick con un deslizador de dos tiradores: el izquierdo es la **zona interna** (recorrido que se ignora alrededor del centro, 0–50) y el derecho la **zona externa** (a partir de qué punto se considera el tope, 50–100; 100 = sin recorte).
+- **Zona muerta** de cada stick con un deslizador de dos tiradores: el izquierdo es la **zona interna** (recorrido que se ignora alrededor del centro, 0–99) y el derecho la **zona externa** (a partir de qué punto se considera el tope, 1–100; 100 = sin recorte). Como en la app oficial, la interna siempre queda por debajo de la externa.
 - **Cruceta:** bloqueo de diagonales e intercambio stick izquierdo ↔ cruceta.
 
 ### Gatillos
@@ -30,7 +30,10 @@ En las secciones de ajustes, el botón flotante **Restaurar respaldo** (abajo a 
 - **Gatillo rápido** de LT y RT (requiere el interruptor trasero del gatillo en recorrido largo).
 
 ### Vibración
-- Intensidad de las empuñaduras en niveles 0–4, las dos a la vez o cada una por separado.
+- Intensidad de las empuñaduras en niveles 0–4, las dos a la vez o cada una por separado. El mando solo guarda esos 5 niveles (0, 25, 50, 75 y 100 %).
+- **Los juegos solo pueden hacer vibrar el mando en modo DS5:** en los modos Android y Xbox, Android no ve sus motores. La intensidad que elijas se aplica también en DS5.
+- **Probar vibración:** con el mando en modo DS5, la tarjeta *Probar vibración* hace vibrar un momento los dos motores (o cada uno), con la intensidad guardada.
+- **Emuladores (PS2 y otros):** si la vibración es demasiado fuerte, el nivel 1 (25 %) es lo más suave que aún vibra. Para bajarla más, usa la escala de vibración del propio emulador.
 
 ### Luces
 - **Anillos de luz** de los sticks: efecto (fijo, respiración, arcoíris, apagado), color, saturación, brillo y velocidad, juntos o por separado.

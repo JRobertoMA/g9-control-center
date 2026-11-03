@@ -37,12 +37,12 @@ Read: `07 <zone> 06 00 00 sum8`. Write: `07 <zone> 06 01 <value> sum8`. The cont
 
 | Zone | Setting | Range in G9 Control | Factory |
 |---|---|---|---|
-| `01` / `02` | Left / right stick · inner zone | 0–50 | 10 |
-| `03` / `04` | Left / right stick · outer zone | 50–100 | 100 |
-| `05` / `06` | LT / RT · start zone | 0–50 | 5 |
-| `07` / `08` | LT / RT · end zone | 50–100 | 95 |
+| `01` / `02` | Left / right stick · inner zone | 0–99 | 10 |
+| `03` / `04` | Left / right stick · outer zone | 1–100 | 100 |
+| `05` / `06` | LT / RT · start zone | 0–99 | 5 |
+| `07` / `08` | LT / RT · end zone | 1–100 | 95 |
 
-Values are percentages of travel. What the controller does with values outside those ranges has not been tested. The inner zone is applied by **rescaling**: output rises smoothly from 0, with no jump. Example: `07 01 06 01 0F 1E` sets the left stick inner zone to 15.
+Values are percentages of travel. The ranges are the official app’s: inner (or start) always below outer (or end). The inner zone is applied by **rescaling**: output rises smoothly from 0, with no jump. Example: `07 01 06 01 0F 1E` sets the left stick inner zone to 15.
 
 ## Quick trigger (`21`)
 

@@ -2,6 +2,26 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.10.0‑beta.3 — 2026‑11‑03 (versión de prueba)
+
+Gracias a los primeros probadores (G9 无极 y dos G9 (2025)):
+
+- **Desbloqueado tras sus pruebas guiadas:**
+  - **G9 无极:** sticks, vibración, luces (con el efecto multicolor) y botones;
+  - **G9 (2025):** sticks, vibración, botones y cambio de modo.
+  - El resto de áreas sigue en solo lectura hasta que se verifique.
+- **Correcciones de la prueba guiada:**
+  - las áreas superadas se desbloquean para el mando correcto, aunque al final se quedara en modo Xbox. La prueba espera a que vuelva en modo Android para la comprobación final;
+  - los anillos en multicolor o arcoíris se restauran con su color: con esos efectos el mando ignora el color enviado, así que la app lo escribe antes en fijo (puede verse un instante). Los anillos en negro tampoco «fallan» ya;
+  - el paso del modo ya no se da por bueno solo cuando llegan pulsaciones de más;
+  - cada mando recibe solo los pasos que admite (por ejemplo, el G7 no tiene luces, vibración ni macros).
+- **Vibración:**
+  - nueva tarjeta *Probar vibración*;
+  - los números 0–4 quedan bajo sus marcas;
+  - probado: el mando solo guarda 5 niveles (los valores intermedios se redondean hacia abajo), y los juegos solo pueden hacerlo vibrar en modo DS5.
+- **Zonas muertas** con los rangos de la app oficial: interna o inicial 0–99 y externa o final 1–100, con la interna siempre por debajo de la externa (antes 0–50 y 50–100, así que un valor puesto con la app oficial no se podía restaurar).
+- El servicio de accesibilidad reconoce el mando en modo DS5, donde Android añade «Sony Interactive Entertainment» a su nombre.
+
 ## 0.10.0‑beta.2 — 2026‑11‑02 (versión de prueba)
 
 - **Prueba guiada para mandos experimentales** (G9 无极 y otros modelos Legion):

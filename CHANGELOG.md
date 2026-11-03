@@ -2,6 +2,26 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.10.0‑beta.3 — 2026‑11‑03 (test version)
+
+Thanks to the first testers (G9 无极 and two G9 (2025)):
+
+- **Unlocked after their guided tests:**
+  - **G9 无极:** sticks, vibration, lights (including the multicolor effect) and buttons;
+  - **G9 (2025):** sticks, vibration, buttons and mode switching.
+  - The other areas stay read‑only until they are verified.
+- **Guided test fixes:**
+  - areas that passed are now unlocked for the right controller, even if it was left in Xbox mode at the end. The test waits for it to come back in Android mode for the final check;
+  - light rings set to multicolor or rainbow are restored with their color: the controller ignores the color sent with those effects, so the app now writes it first in solid mode (you may see the solid color for an instant). Black rings no longer “fail” either;
+  - the mode step can no longer pass by itself when extra button presses arrive;
+  - each controller only gets the steps it supports (for example, the G7 has no lights, vibration or macros).
+- **Vibration:**
+  - new *Test vibration* card;
+  - the 0–4 labels now sit under their marks;
+  - tested: the controller only stores 5 levels (in‑between values are rounded down), and games can only make it vibrate in DS5 mode.
+- **Dead zones** use the official app’s ranges: inner/start 0–99 and outer/end 1–100, with the inner one always below the outer one (before, 0–50 and 50–100, so a value set in the official app could not be restored).
+- The accessibility service now recognizes the controller in DS5 mode, where Android adds “Sony Interactive Entertainment” to its name.
+
 ## 0.10.0‑beta.2 — 2026‑11‑02 (test version)
 
 - **Guided test for experimental controllers** (G9 无极 and other Legion models):

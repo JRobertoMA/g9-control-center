@@ -22,7 +22,7 @@ Every change is written to the controller, acknowledged and **read back to verif
 In the settings sections, the floating **Restore backup** button (bottom right) rewrites that section’s settings with the latest backup.
 
 ### Sticks
-- **Dead zone** of each stick with a two‑thumb slider: the left thumb is the **inner zone** (travel ignored around the center, 0–50) and the right one the **outer zone** (point from which the stick counts as fully pushed, 50–100; 100 = no clipping).
+- **Dead zone** of each stick with a two‑thumb slider: the left thumb is the **inner zone** (travel ignored around the center, 0–99) and the right one the **outer zone** (point from which the stick counts as fully pushed, 1–100; 100 = no clipping). As in the official app, the inner zone always stays below the outer one.
 - **D‑pad:** diagonal lock and left stick ↔ D‑pad swap.
 
 ### Triggers
@@ -30,7 +30,10 @@ In the settings sections, the floating **Restore backup** button (bottom right) 
 - **Quick trigger** for LT and RT (requires the trigger’s back switch on long travel).
 
 ### Vibration
-- Grip intensity in levels 0–4, both at once or each one separately.
+- Grip intensity in levels 0–4, both at once or each one separately. The controller only stores these 5 levels (0, 25, 50, 75 and 100 %).
+- **Games can only make the controller vibrate in DS5 mode:** in Android and Xbox mode, Android does not see its motors. The intensity you set also applies in DS5.
+- **Test vibration:** with the controller in DS5 mode, the *Test vibration* card makes both motors (or each one) vibrate for a moment, with the saved intensity.
+- **Emulators (PS2 and others):** if the vibration feels too strong, level 1 (25 %) is the softest setting that still vibrates. To go lower, use the emulator's own vibration or rumble scale.
 
 ### Lights
 - **Light rings** around the sticks: effect (solid, breathing, rainbow, off), color, saturation, brightness and speed, together or separately.

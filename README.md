@@ -19,6 +19,7 @@ The source code is not published for now.
 
 | Version | File | SHA‑256 |
 |---|---|---|
+| 0.10.0‑beta.3 (test version) | `G9Control-0.10.0-beta.3.apk` (in *Releases*) | `ecd96f194b87f0f5dcf95795485e11b3fffb1a07de3689e083033aa00ae93e50` |
 | 0.10.0‑beta.2 (test version) | `G9Control-0.10.0-beta.2.apk` (in *Releases*) | `fff9c86b3db57b5cbdc5bebca75be61c1c9e4848afd2acc709c56d635b8e6908` |
 | 0.10.0‑beta.1 (test version) | `G9Control-0.10.0-beta.1.apk` (in *Releases*) | `bb52991e2a0be2f0bfdb6fcdedd78c42bb3deb9eea58d9ccd1d190c930479239` |
 | 0.8.0 | `G9Control-0.8.0.apk` (in *Releases*) | `b004fc7c4bffaa020eb291a90c79106455aa28b3ce7489be17fb71e564b513df` |
@@ -32,8 +33,8 @@ Check the file before installing it: `sha256sum G9Control-0.8.0.apk`. What chang
 | Controller | USB (Android mode) | Status |
 |---|---|---|
 | **Legion Gaming Controller G9 2026** | `3537:1136` | ✅ Verified: everything can be configured |
-| Legion Gamepad G9 无极 (Wuji) | `3537:1161` | 🧪 Experimental: reading works; settings stay read‑only until a tester verifies them |
-| Legion Gaming Controller G9 (2025) | `3537:1134` | 🧪 Experimental (same commands as the 2026) |
+| Legion Gamepad G9 无极 (Wuji) | `3537:1161` | 🧪 Experimental. Verified by a tester (from 0.10.0‑beta.3): sticks, vibration, lights and buttons. Mode switching stays read‑only |
+| Legion Gaming Controller G9 (2025) | `3537:1134` | 🧪 Experimental. Verified by testers (from 0.10.0‑beta.3): sticks, vibration, buttons and mode switching. Lights stay read‑only |
 | Legion Gaming Controller G9 Pro | name only | 🧪 Experimental (adds optical buttons, not supported yet) |
 | Legion Gaming Controller G7 | `3537:1129` | 🧪 Experimental (no lights, vibration or macros; L4 and R4 only) |
 | Legion Gaming Controller G3 | `3537:1154` | 🔎 Detected only: the official app has no configuration commands for it |
