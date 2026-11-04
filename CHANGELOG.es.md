@@ -2,6 +2,11 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.10.0‑beta.4 — 2026‑11‑03 (versión de prueba)
+
+- **Corregido: los ajustes no hacían nada en los mandos aún marcados como experimentales** (G9 (2025), G9 无极), salvo que antes se exportara un respaldo. El único aviso era la línea de estado. Ahora la app guarda el respaldo sola antes del primer cambio de cada sesión.
+- **Corregido: el color de los anillos se oscurecía un poco con cada escritura** (introducido en la 0.10.0‑beta.3). Si tus anillos se ven algo más tenues o con otro tono, vuelve a poner su color.
+
 ## 0.10.0‑beta.3 — 2026‑11‑03 (versión de prueba)
 
 Gracias a los primeros probadores (G9 无极 y dos G9 (2025)):

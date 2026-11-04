@@ -2,6 +2,11 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.10.0‑beta.4 — 2026‑11‑03 (test version)
+
+- **Fixed: settings did nothing on controllers still marked as experimental** (G9 (2025), G9 无极), unless a backup had been exported first. The only warning was the status line. The app now saves the backup by itself before the first change of each session.
+- **Fixed: light ring colors got slightly darker with every write** (introduced in 0.10.0‑beta.3). If your rings look a little dimmer or shifted, set their color again.
+
 ## 0.10.0‑beta.3 — 2026‑11‑03 (test version)
 
 Thanks to the first testers (G9 无极 and two G9 (2025)):
