@@ -2,6 +2,14 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.10.0 — estable
+
+Primera versión estable desde la 0.8.0. Incluye todo lo de las versiones de prueba 0.9 y 0.10 que aparecen abajo.
+
+- **G9 (2025) totalmente soportado:** las luces y la distribución de botones se desbloquean tras las pruebas guiadas de los probadores. Ya no muestra el aviso de experimental.
+- Los mensajes que nombraban el G9 2026 a cualquier mando ahora son genéricos.
+- Los demás mandos Legion (G9 无极, G9 Pro, G7) siguen con soporte experimental, y el G3 solo se detecta.
+
 ## 0.10.0‑beta.4 — 2026‑11‑03 (versión de prueba)
 
 - **Corregido: los ajustes no hacían nada en los mandos aún marcados como experimentales** (G9 (2025), G9 无极), salvo que antes se exportara un respaldo. El único aviso era la línea de estado. Ahora la app guarda el respaldo sola antes del primer cambio de cada sesión.

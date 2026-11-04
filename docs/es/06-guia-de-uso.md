@@ -2,7 +2,7 @@
 
 [English](../06-user-guide.md) · **Español**
 
-G9 Control configura el **Legion Gaming Controller G9 2026** conectado por USB‑C a una tablet Android (probada en la Lenovo Legion Y700 Gen5). No necesita root ni cuenta, y solo usa internet si pulsas **Enviar diagnóstico**. Toda la configuración se guarda en el propio mando y funciona en sus tres modos: Android, Xbox y DS5.
+G9 Control configura el **Legion Gaming Controller G9 2026 y G9 (2025)** conectado por USB‑C a una tablet Android (probada en la Lenovo Legion Y700 Gen5). No necesita root ni cuenta, y solo usa internet si pulsas **Enviar diagnóstico**. Toda la configuración se guarda en el propio mando y funciona en sus tres modos: Android, Xbox y DS5.
 
 La app está en **inglés y español** y sigue el idioma del sistema. En Android 13+ puedes elegir el idioma solo para esta app: *Ajustes → Apps → G9 Control → Idioma*.
 

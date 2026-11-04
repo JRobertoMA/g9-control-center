@@ -2,6 +2,14 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.10.0 — stable
+
+First stable version since 0.8.0. It includes everything from the 0.9 and 0.10 test versions listed below.
+
+- **G9 (2025) fully supported:** lights and the button layout are unlocked after the testers’ guided tests. It no longer shows the experimental warning.
+- Messages that named the G9 2026 to every controller are now generic.
+- Other Legion controllers (G9 无极, G9 Pro, G7) keep their experimental support, and the G3 is detected only.
+
 ## 0.10.0‑beta.4 — 2026‑11‑03 (test version)
 
 - **Fixed: settings did nothing on controllers still marked as experimental** (G9 (2025), G9 无极), unless a backup had been exported first. The only warning was the status line. The app now saves the backup by itself before the first change of each session.

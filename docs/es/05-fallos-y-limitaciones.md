@@ -77,3 +77,7 @@ Usar “Restore default” en la app oficial devuelve el mando a los [valores de
 | Comando `15` (“restaurar configuración”) | Formato desconocido; no se usa |
 | Apagar el mando a voluntad | ❌ No hay orden de apagado; el comando de tiempo de reposo (`26`) no responde; cortar la alimentación USB requiere root. Se duerme tras 10 minutos sin uso. Sí puedes apagar sus luces (anillos en «Apagado», Home al mínimo) |
 | Actualización de firmware | Fuera del alcance de este proyecto |
+
+## Avisos conocidos
+
+- **G9 (2025), anillos de luz:** un probador vio encendidos solo los LEDs del lado izquierdo cuando la app puso los dos anillos en rojo fijo, aunque el mando indicó que había guardado el rojo en los dos. Los anillos de otro probador funcionaron bien. Aún no se conoce la causa.

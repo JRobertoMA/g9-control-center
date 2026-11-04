@@ -77,3 +77,7 @@ Using “Restore default” in the official app returns the controller to the [f
 | Command `15` (“restore configuration”) | Unknown format; not used |
 | Turning the controller off on demand | ❌ No power‑off command; the sleep‑time command (`26`) gets no response; cutting USB power needs root. It sleeps after 10 minutes idle. You can turn its lights off (rings “Off”, Home at minimum) |
 | Firmware update | Out of this project’s scope |
+
+## Known reports
+
+- **G9 (2025), light rings:** one tester saw only the LEDs on the left side light up when the app set both rings to solid red, although the controller reported that it saved red on both. Another tester’s rings worked correctly. The cause is still unknown.
