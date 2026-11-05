@@ -2,7 +2,7 @@
 
 [English](../06-user-guide.md) · **Español**
 
-G9 Control configura el **Legion Gaming Controller G9 2026 y G9 (2025)** conectado por USB‑C a una tablet Android (probada en la Lenovo Legion Y700 Gen5). No necesita root ni cuenta, y solo usa internet si pulsas **Enviar diagnóstico**. Toda la configuración se guarda en el propio mando y funciona en sus tres modos: Android, Xbox y DS5.
+G9 Control configura el **Legion Gaming Controller G9 2026, G9 (2025) y G9 无极** conectado por USB‑C a una tablet Android (probada en la Lenovo Legion Y700 Gen5). No necesita root ni cuenta, y solo usa internet si pulsas **Enviar diagnóstico**. Toda la configuración se guarda en el propio mando y funciona en sus tres modos: Android, Xbox y DS5.
 
 La app está en **inglés y español** y sigue el idioma del sistema. En Android 13+ puedes elegir el idioma solo para esta app: *Ajustes → Apps → G9 Control → Idioma*.
 
@@ -53,7 +53,7 @@ En las secciones de ajustes, el botón flotante **Restaurar respaldo** (abajo a 
 - **Información:** firmware, protocolo, fecha de fabricación e identificador del mando.
 - **Modo de conexión:** “Pasar a modo Xbox”. En Xbox la app no puede configurar el mando ni devolverlo a Android. Para volver, mantén **Vista + Menú 2 s** dos veces (Xbox → DS5 → Android), o una vez y pulsa **Cambiar a modo Android** en la app. DS5 se alcanza desde Xbox con un Vista + Menú.
 - **Perfiles:** guarda la configuración actual con un nombre y aplícala cuando quieras. Se pueden exportar a un archivo e importar (por ejemplo, para compartirlos).
-- **Restaurar:** todo desde el último respaldo, o **valores de fábrica**: sticks 10–100, gatillos 5–95, vibración nivel 3, anillos cian, Home blanco, distribución estándar y botones traseros sin asignar.
+- **Restaurar:** todo desde el último respaldo, o **valores de fábrica**: sticks 10–100, gatillos 5–95, vibración nivel 3, anillos de fábrica (cian en el G9 2026, multicolor en el G9 无极), Home blanco, distribución estándar y botones traseros sin asignar.
 - **Usar la tablet con el mando:** combinaciones del mando y asa en pantalla para abrir notificaciones, ajustes rápidos, recientes, inicio y atrás sin deslizar desde el borde (ver más abajo).
 
 ### Prueba

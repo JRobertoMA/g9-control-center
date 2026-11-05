@@ -81,3 +81,4 @@ Using “Restore default” in the official app returns the controller to the [f
 ## Known reports
 
 - **G9 (2025), light rings:** one tester saw only the LEDs on the left side light up when the app set both rings to solid red, although the controller reported that it saved red on both. Another tester’s rings worked correctly. The cause is still unknown.
+- **G9 (2025), not tested yet:** *Switch to Android mode* (from DS5) and *Factory defaults*. If *Factory defaults* reports the rings as not verified, the reset may still have worked: the app compares with the G9 2026’s factory settings. Export a backup first.

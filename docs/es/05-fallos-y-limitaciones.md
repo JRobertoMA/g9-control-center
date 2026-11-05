@@ -81,3 +81,4 @@ Usar “Restore default” en la app oficial devuelve el mando a los [valores de
 ## Avisos conocidos
 
 - **G9 (2025), anillos de luz:** un probador vio encendidos solo los LEDs del lado izquierdo cuando la app puso los dos anillos en rojo fijo, aunque el mando indicó que había guardado el rojo en los dos. Los anillos de otro probador funcionaron bien. Aún no se conoce la causa.
+- **G9 (2025), sin probar aún:** *Cambiar a modo Android* (desde DS5) y *Valores de fábrica*. Si *Valores de fábrica* indica que los anillos no se verificaron, puede que el restablecimiento sí funcionara: la app compara con los valores de fábrica del G9 2026. Exporta antes un respaldo.

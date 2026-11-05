@@ -4,7 +4,7 @@
 
 [English](README.md) · **Español**
 
-App Android ligera y **no oficial** para configurar el **Lenovo Legion Gaming Controller G9 2026 y G9 (2025)** (fabricados por GameSir, USB `3537:1136` y `3537:1134`) conectado por USB‑C a una tablet Android. Es una alternativa a la app oficial *Ultra Control* que solo incluye la configuración del mando: sin cuentas, sin publicidad y sin analíticas. Solo se conecta a internet cuando tú lo pides: para **enviar un diagnóstico** o para **buscar actualizaciones de la app** ([política de privacidad](PRIVACIDAD.md)). La app está en **inglés y español**, según el idioma del sistema.
+App Android ligera y **no oficial** para configurar el **Lenovo Legion Gaming Controller G9 2026, G9 (2025) y G9 无极 (Wuji)** (USB `3537:1136`, `3537:1134` y `3537:1161`) conectado por USB‑C a una tablet Android. Es una alternativa a la app oficial *Ultra Control* que solo incluye la configuración del mando: sin cuentas, sin publicidad y sin analíticas. Solo se conecta a internet cuando tú lo pides: para **enviar un diagnóstico** o para **buscar actualizaciones de la app** ([política de privacidad](PRIVACIDAD.md)). La app está en **inglés y español**, según el idioma del sistema.
 
 Este repositorio contiene:
 
@@ -19,20 +19,21 @@ El código fuente no se publica por ahora.
 
 | Versión | Archivo | SHA‑256 |
 |---|---|---|
-| **0.10.0 (estable)** | `G9Control-0.10.0.apk` (en *Releases*) | `d9568324af7c3e8510960e8c10b88700f56f240c8a462734dbd082a2fecc69c2` |
+| **0.10.1 (estable)** | `G9Control-0.10.1.apk` (en *Releases*) | `5be166dfab273c57d941e3c40d7b89674aefa873e5177ba92aedff3fa5a5ae6b` |
+| 0.10.0 | `G9Control-0.10.0.apk` (en *Releases*) | `d9568324af7c3e8510960e8c10b88700f56f240c8a462734dbd082a2fecc69c2` |
 | 0.10.0‑beta.4 (versión de prueba) | `G9Control-0.10.0-beta.4.apk` (en *Releases*) | `f76295eddb5b8a4a04eed426c4da4a492ea9db012aa260336cdf408843a19bad` |
 | 0.8.0 | `G9Control-0.8.0.apk` (en *Releases*) | `b004fc7c4bffaa020eb291a90c79106455aa28b3ce7489be17fb71e564b513df` |
 
-Comprueba el archivo antes de instalarlo: `sha256sum G9Control-0.10.0.apk`. Novedades de cada versión: [cambios](CHANGELOG.es.md).
+Comprueba el archivo antes de instalarlo: `sha256sum G9Control-0.10.1.apk`. Novedades de cada versión: [cambios](CHANGELOG.es.md).
 
-**Requisitos:** Android 12 o superior con USB Host (OTG), y un mando Legion conectado por USB‑C (el G9 2026 o el G9 (2025), para configurarlo todo). No necesita root, Shizuku ni cuenta. Probada en una Lenovo Legion Y700 Gen5 (TB323FU) con el firmware 0.10 del mando (protocolo GCM 2.8).
+**Requisitos:** Android 12 o superior con USB Host (OTG), y un mando Legion conectado por USB‑C (el G9 2026, el G9 (2025) o el G9 无极, para configurarlo todo). No necesita root, Shizuku ni cuenta. Probada en una Lenovo Legion Y700 Gen5 (TB323FU) con el firmware 0.10 del mando (protocolo GCM 2.8).
 
 ## Mandos soportados
 
 | Mando | USB (modo Android) | Estado |
 |---|---|---|
 | **Legion Gaming Controller G9 2026** | `3537:1136` | ✅ Verificado: se puede configurar todo |
-| Legion Gamepad G9 无极 (Wuji) | `3537:1161` | 🧪 Experimental. Verificado por un probador (desde la 0.10.0‑beta.3): sticks, vibración, luces y botones. El cambio de modo sigue en solo lectura |
+| **Legion Gamepad G9 无极 (Wuji)** | `3537:1161` | ✅ Verificado por probadores: se puede configurar todo |
 | **Legion Gaming Controller G9 (2025)** | `3537:1134` | ✅ Verificado por probadores: se puede configurar todo ([aviso conocido](docs/es/05-fallos-y-limitaciones.md#avisos-conocidos)) |
 | Legion Gaming Controller G9 Pro | solo por el nombre | 🧪 Experimental (añade botones ópticos, aún sin soporte) |
 | Legion Gaming Controller G7 | `3537:1129` | 🧪 Experimental (sin luces, vibración ni macros; solo L4 y R4) |

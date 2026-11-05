@@ -2,7 +2,7 @@
 
 **English** · [Español](es/06-guia-de-uso.md)
 
-G9 Control configures the **Legion Gaming Controller G9 2026 and G9 (2025)** connected over USB‑C to an Android tablet (tested on the Lenovo Legion Y700 Gen5). It needs no root or account, and only uses the internet if you tap **Send diagnostics**. All settings are stored in the controller itself and work in its three modes: Android, Xbox and DS5.
+G9 Control configures the **Legion Gaming Controller G9 2026, G9 (2025) and G9 无极** connected over USB‑C to an Android tablet (tested on the Lenovo Legion Y700 Gen5). It needs no root or account, and only uses the internet if you tap **Send diagnostics**. All settings are stored in the controller itself and work in its three modes: Android, Xbox and DS5.
 
 The app is in **English and Spanish** and follows the system language. On Android 13+ you can pick the language for this app only: *Settings → Apps → G9 Control → Language*.
 
@@ -53,7 +53,7 @@ In the settings sections, the floating **Restore backup** button (bottom right) 
 - **Information:** firmware, protocol, manufacturing date and controller identifier.
 - **Connection mode:** “Switch to Xbox mode”. In Xbox the app can neither configure the controller nor switch it back to Android. To return, hold **View + Menu for 2 s** twice (Xbox → DS5 → Android), or once and then tap **Switch to Android mode** in the app. DS5 is reached from Xbox with one View + Menu.
 - **Profiles:** save the current configuration with a name and apply it whenever you want. Profiles can be exported to a file and imported (for example, to share them).
-- **Restore:** everything from the latest backup, or **factory defaults**: sticks 10–100, triggers 5–95, vibration level 3, cyan rings, white Home, standard layout and back buttons unassigned.
+- **Restore:** everything from the latest backup, or **factory defaults**: sticks 10–100, triggers 5–95, vibration level 3, factory rings (cyan on the G9 2026, multicolor on the G9 无极), white Home, standard layout and back buttons unassigned.
 - **Using the tablet with the controller attached:** controller combos and an on‑screen handle to open notifications, quick settings, recents, home and back without swiping from the edge (see below).
 
 ### Test

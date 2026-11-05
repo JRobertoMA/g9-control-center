@@ -2,6 +2,11 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.10.1 — estable
+
+- **G9 无极 (Wuji) totalmente soportado:** el cambio de modo se desbloquea tras las pruebas guiadas de los probadores. Ya no muestra el aviso de experimental.
+- **Valores de fábrica:** en el G9 无极 ya no indica «1 sin verificar» cuando el restablecimiento funcionó. Los anillos de fábrica dependen del modelo.
+
 ## 0.10.0 — estable
 
 Primera versión estable desde la 0.8.0. Incluye todo lo de las versiones de prueba 0.9 y 0.10 que aparecen abajo.

@@ -2,6 +2,11 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.10.1 — stable
+
+- **G9 无极 (Wuji) fully supported:** mode switching is unlocked after the testers’ guided tests. It no longer shows the experimental warning.
+- **Factory defaults:** on the G9 无极, it no longer reports “1 not verified” when the reset worked. The rings’ factory settings depend on the model.
+
 ## 0.10.0 — stable
 
 First stable version since 0.8.0. It includes everything from the 0.9 and 0.10 test versions listed below.
