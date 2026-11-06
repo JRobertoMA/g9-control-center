@@ -81,5 +81,5 @@ Usar “Restore default” en la app oficial devuelve el mando a los [valores de
 ## Avisos conocidos
 
 - **G9 (2025), anillos de luz:** un probador vio encendidos solo los LEDs del lado izquierdo cuando la app puso los dos anillos en rojo fijo, aunque el mando indicó que había guardado el rojo en los dos. Los anillos de otro probador funcionaron bien. Aún no se conoce la causa.
-- **G9 (2025), sin probar aún:** *Cambiar a modo Android* (desde DS5) y *Valores de fábrica*. Si *Valores de fábrica* indica que los anillos no se verificaron, puede que el restablecimiento sí funcionara: la app compara con los valores de fábrica del G9 2026. Exporta antes un respaldo.
+- **G9 (2025), sin probar aún:** *Valores de fábrica*. Si indica que los anillos no se verificaron, puede que el restablecimiento sí funcionara: la app compara con los valores de fábrica del G9 2026. Exporta antes un respaldo.
 - **Puertos USB‑C de la tablet:** solo uno lleva datos a la vez. En una Y700 Gen5, con una memoria USB en el puerto de alta velocidad, el mando conserva la corriente pero desaparece del USB, sea cual sea el que se conectó primero. Al quitar la memoria, el mando vuelve solo. Un usuario indica lo mismo en una Gen3. Parece un límite de la tablet, y la app no puede cambiarlo.
