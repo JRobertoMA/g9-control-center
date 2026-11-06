@@ -51,7 +51,7 @@ The controller has three modes. When it changes mode it **disconnects and reconn
 
 - Each mode’s LED color is shown on the **Home LED**. If the Home light has low saturation and brightness, **the color blink is not visible** when switching modes: the LED stays off, although the mode still changes ([details](03-settings.md#home-light-05-08)).
 - **The configuration can only be read and written in Android mode**, but it is stored in the controller and **applies in all three modes**. For example, a dead zone of 50 written in Android works the same in Xbox and DS5.
-- **G‑Touch** (tested on the G9 2026): `08 02 07 01 02 01` turns it on, and holding View + Menu for 2 s leaves it. The controller then appears to Android as a 10‑finger touchscreen (X/Y 0–4095), and it repeats as real touches what an app sends it: `13 <count> [(id<<4 | state) xL xH+(yL<<4) yH]… sum8` (state 1 = down, 0 = up). G9 Control does not use this mode. The `13` command is not in the official app’s declared command list for these controllers; one tap was tested.
+- **G‑Touch** (tested on the G9 2026): `08 02 07 01 02 01` turns it on, and holding View + Menu for 2 s leaves it. The controller then appears to Android as a 10‑finger touchscreen (X/Y 0–4095), and it repeats as real touches what an app sends it: `13 <count> [(id<<4 | state) xL xH+(yL<<4) yH]… sum8` (state 1 = down, 0 = up). In this mode, buttons and sticks don’t reach Android: they arrive on the configuration channel as `43 …` reports. G9 Control does not use this mode. The `13` command is not in the official app’s declared command list for these controllers; a tap, two fingers and a drag were tested.
 
 ### Switching modes
 

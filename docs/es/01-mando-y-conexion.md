@@ -51,7 +51,7 @@ El mando tiene tres modos. Al cambiar de modo **se desconecta y vuelve a conecta
 
 - El color del LED de cada modo se muestra en el **LED del Home**. Si la luz del Home tiene la saturación y el brillo bajos, al cambiar de modo **no se ve el parpadeo de color**: el LED sigue apagado, aunque el modo cambia igual ([detalle](03-ajustes.md#luz-del-home-05-08)).
 - La **configuración solo se puede leer y escribir en modo Android**, pero se guarda en el mando y **se aplica en los tres modos**. Por ejemplo, una zona muerta de 50 escrita en Android actúa igual en Xbox y en DS5.
-- **G‑Touch** (probado en el G9 2026): `08 02 07 01 02 01` lo activa, y al mantener Vista + Menú 2 s se sale de él. El mando aparece entonces ante Android como una pantalla táctil de 10 dedos (X/Y 0–4095), y repite como toques reales lo que le envía una app: `13 <n.º> [(id<<4 | estado) xL xH+(yL<<4) yH]… sum8` (estado 1 = pulsado, 0 = soltar). G9 Control no usa este modo. El comando `13` no está en la lista de comandos que la app oficial declara para estos mandos; se probó un toque.
+- **G‑Touch** (probado en el G9 2026): `08 02 07 01 02 01` lo activa, y al mantener Vista + Menú 2 s se sale de él. El mando aparece entonces ante Android como una pantalla táctil de 10 dedos (X/Y 0–4095), y repite como toques reales lo que le envía una app: `13 <n.º> [(id<<4 | estado) xL xH+(yL<<4) yH]… sum8` (estado 1 = pulsado, 0 = soltar). En este modo, los botones y los sticks no llegan a Android: llegan por el canal de configuración, en informes `43 …`. G9 Control no usa este modo. El comando `13` no está en la lista de comandos que la app oficial declara para estos mandos; se probaron un toque, dos dedos y un arrastre.
 
 ### Cambiar de modo
 
