@@ -2,6 +2,15 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.11.0‑beta.1 — 2026‑11‑13 (test version)
+
+Ideas taken from [Consolize](https://github.com/sudo-diego/Consolize), tested on the G9 2026:
+
+- **Switch to DS5 mode from the app** (G9 2026): DS5 is the only mode in which games make the controller vibrate, and the app can switch it back to Android.
+- **Quick Settings tiles** *G9: Android*, *G9: DS5* and *G9: Xbox*, to switch modes without opening the app.
+- **Test vibration in Android mode** (G9 2026): the app makes the grips vibrate itself, both or each one.
+- Documented: holding Home for 5 s turns the controller off; A, B, X, Y or Home turn it back on.
+
 ## 0.10.1 — stable
 
 - **G9 无极 (Wuji) fully supported:** mode switching is unlocked after the testers’ guided tests. It no longer shows the experimental warning.

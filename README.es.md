@@ -19,6 +19,7 @@ El código fuente no se publica por ahora.
 
 | Versión | Archivo | SHA‑256 |
 |---|---|---|
+| 0.11.0‑beta.1 (versión de prueba) | `G9Control-0.11.0-beta.1.apk` (en *Releases*) | `104274a61306c9842daf4e0d5a4f4a2ed40d4f4f6df85a4bcc2f91a7b691b03c` |
 | **0.10.1 (estable)** | `G9Control-0.10.1.apk` (en *Releases*) | `5be166dfab273c57d941e3c40d7b89674aefa873e5177ba92aedff3fa5a5ae6b` |
 | 0.10.0 | `G9Control-0.10.0.apk` (en *Releases*) | `d9568324af7c3e8510960e8c10b88700f56f240c8a462734dbd082a2fecc69c2` |
 | 0.10.0‑beta.4 (versión de prueba) | `G9Control-0.10.0-beta.4.apk` (en *Releases*) | `f76295eddb5b8a4a04eed426c4da4a492ea9db012aa260336cdf408843a19bad` |
@@ -57,7 +58,7 @@ Con eso se prueba contigo cada área, paso a paso, antes de desbloquearla. Detal
 | Sticks y gatillos | Zonas muertas interna/externa de cada stick, zonas inicial/final de cada gatillo, gatillo rápido, bloqueo de diagonales de la cruceta, intercambio stick izq. ↔ cruceta |
 | Vibración y luces | Vibración por empuñadura (niveles 0–4); anillos de luz (efecto, color, saturación, brillo, velocidad); luz del botón Home |
 | Botones | Remapeo de los 4 botones traseros (todos a la vez), macros de hasta 11 teclas con modo pulsar/mantener y bucle |
-| Mando | Información, paso a modo Xbox, distribución ABXY, perfiles con nombre, restaurar desde respaldo, valores de fábrica |
+| Mando | Información, paso a modo Xbox o DS5 (DS5 en el G9 2026), mosaicos de Ajustes rápidos, distribución ABXY, perfiles con nombre, restaurar desde respaldo, valores de fábrica |
 | Prueba | Pasos de calibración y vista en vivo a pantalla completa de sticks, gatillos y botones |
 | Uso de la tablet | Opcional: combinaciones del mando y asa en pantalla para abrir notificaciones, ajustes rápidos, recientes, inicio y atrás en apps a pantalla completa |
 

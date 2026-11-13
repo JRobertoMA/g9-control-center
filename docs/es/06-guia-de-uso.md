@@ -32,7 +32,7 @@ En las secciones de ajustes, el botón flotante **Restaurar respaldo** (abajo a 
 ### Vibración
 - Intensidad de las empuñaduras en niveles 0–4, las dos a la vez o cada una por separado. El mando solo guarda esos 5 niveles (0, 25, 50, 75 y 100 %).
 - **Los juegos solo pueden hacer vibrar el mando en modo DS5:** en los modos Android y Xbox, Android no ve sus motores. La intensidad que elijas se aplica también en DS5.
-- **Probar vibración:** con el mando en modo DS5, la tarjeta *Probar vibración* hace vibrar un momento los dos motores (o cada uno), con la intensidad guardada.
+- **Probar vibración:** en modo DS5, la tarjeta *Probar vibración* hace vibrar un momento los dos motores (o cada uno), como lo haría un juego, con la intensidad guardada. En el G9 2026 también funciona en modo Android: la app envía ella misma la vibración, con una fuerza fija.
 - **Emuladores (PS2 y otros):** si la vibración es demasiado fuerte, el nivel 1 (25 %) es lo más suave que aún vibra. Para bajarla más, usa la escala de vibración del propio emulador.
 
 ### Luces
@@ -51,7 +51,8 @@ En las secciones de ajustes, el botón flotante **Restaurar respaldo** (abajo a 
 
 ### Mando
 - **Información:** firmware, protocolo, fecha de fabricación e identificador del mando.
-- **Modo de conexión:** “Pasar a modo Xbox”. En Xbox la app no puede configurar el mando ni devolverlo a Android. Para volver, mantén **Vista + Menú 2 s** dos veces (Xbox → DS5 → Android), o una vez y pulsa **Cambiar a modo Android** en la app. DS5 se alcanza desde Xbox con un Vista + Menú.
+- **Modo de conexión:** en el G9 2026, «Pasar a modo DS5» (el único modo en que los juegos hacen vibrar el mando; para volver, pulsa **Cambiar a modo Android**). También «Pasar a modo Xbox». En Xbox la app no puede configurar el mando ni devolverlo a Android. Para volver, mantén **Vista + Menú 2 s** dos veces (Xbox → DS5 → Android), o una vez y pulsa **Cambiar a modo Android** en la app. DS5 se alcanza desde Xbox con un Vista + Menú.
+- **Mosaicos de Ajustes rápidos:** añade *G9: Android*, *G9: DS5* y *G9: Xbox* al panel de Ajustes rápidos para cambiar de modo sin abrir la app. Cada uno indica si es el modo actual o si está disponible.
 - **Perfiles:** guarda la configuración actual con un nombre y aplícala cuando quieras. Se pueden exportar a un archivo e importar (por ejemplo, para compartirlos).
 - **Restaurar:** todo desde el último respaldo, o **valores de fábrica**: sticks 10–100, gatillos 5–95, vibración nivel 3, anillos de fábrica (cian en el G9 2026, multicolor en el G9 无极), Home blanco, distribución estándar y botones traseros sin asignar.
 - **Usar la tablet con el mando:** combinaciones del mando y asa en pantalla para abrir notificaciones, ajustes rápidos, recientes, inicio y atrás sin deslizar desde el borde (ver más abajo).

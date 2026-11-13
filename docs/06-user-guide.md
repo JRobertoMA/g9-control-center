@@ -32,7 +32,7 @@ In the settings sections, the floating **Restore backup** button (bottom right) 
 ### Vibration
 - Grip intensity in levels 0–4, both at once or each one separately. The controller only stores these 5 levels (0, 25, 50, 75 and 100 %).
 - **Games can only make the controller vibrate in DS5 mode:** in Android and Xbox mode, Android does not see its motors. The intensity you set also applies in DS5.
-- **Test vibration:** with the controller in DS5 mode, the *Test vibration* card makes both motors (or each one) vibrate for a moment, with the saved intensity.
+- **Test vibration:** in DS5 mode, the *Test vibration* card makes both motors (or each one) vibrate for a moment, as a game would, with the saved intensity. On the G9 2026 it also works in Android mode: the app sends the vibration itself, with a fixed strength.
 - **Emulators (PS2 and others):** if the vibration feels too strong, level 1 (25 %) is the softest setting that still vibrates. To go lower, use the emulator's own vibration or rumble scale.
 
 ### Lights
@@ -51,7 +51,8 @@ In the settings sections, the floating **Restore backup** button (bottom right) 
 
 ### Controller
 - **Information:** firmware, protocol, manufacturing date and controller identifier.
-- **Connection mode:** “Switch to Xbox mode”. In Xbox the app can neither configure the controller nor switch it back to Android. To return, hold **View + Menu for 2 s** twice (Xbox → DS5 → Android), or once and then tap **Switch to Android mode** in the app. DS5 is reached from Xbox with one View + Menu.
+- **Connection mode:** on the G9 2026, “Switch to DS5 mode” (the only mode in which games make the controller vibrate; tap **Switch to Android mode** to come back). Also “Switch to Xbox mode”. In Xbox the app can neither configure the controller nor switch it back to Android. To return, hold **View + Menu for 2 s** twice (Xbox → DS5 → Android), or once and then tap **Switch to Android mode** in the app. DS5 is reached from Xbox with one View + Menu.
+- **Quick Settings tiles:** add *G9: Android*, *G9: DS5* and *G9: Xbox* to the Quick Settings panel to switch modes without opening the app. Each shows whether it is the current mode or available.
 - **Profiles:** save the current configuration with a name and apply it whenever you want. Profiles can be exported to a file and imported (for example, to share them).
 - **Restore:** everything from the latest backup, or **factory defaults**: sticks 10–100, triggers 5–95, vibration level 3, factory rings (cyan on the G9 2026, multicolor on the G9 无极), white Home, standard layout and back buttons unassigned.
 - **Using the tablet with the controller attached:** controller combos and an on‑screen handle to open notifications, quick settings, recents, home and back without swiping from the edge (see below).

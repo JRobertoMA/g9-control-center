@@ -2,6 +2,15 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.11.0‑beta.1 — 2026‑11‑13 (versión de prueba)
+
+Ideas tomadas de [Consolize](https://github.com/sudo-diego/Consolize), probadas en el G9 2026:
+
+- **Pasar a modo DS5 desde la app** (G9 2026): DS5 es el único modo en que los juegos hacen vibrar el mando, y la app puede devolverlo a Android.
+- **Mosaicos de Ajustes rápidos** *G9: Android*, *G9: DS5* y *G9: Xbox*, para cambiar de modo sin abrir la app.
+- **Probar vibración en modo Android** (G9 2026): la app hace vibrar las empuñaduras ella misma, las dos o cada una.
+- Documentado: mantener Home 5 s apaga el mando; A, B, X, Y o Home lo encienden.
+
 ## 0.10.1 — estable
 
 - **G9 无极 (Wuji) totalmente soportado:** el cambio de modo se desbloquea tras las pruebas guiadas de los probadores. Ya no muestra el aviso de experimental.
