@@ -12,7 +12,7 @@
   - vibración inmediata en modo Android;
   - valores de fábrica, con restauración automática desde el respaldo.
   
-  Lo que funcione se desbloquea en tu tablet. **Envía los resultados**: deciden si se activa para todos.
+  Lo que funcione se desbloquea en tu tablet **al enviar los resultados** (*Enviar y desbloquear*): deciden si se activa para todos.
 
 ## 0.11.0‑beta.1 — 2026‑11‑13 (versión de prueba)
 

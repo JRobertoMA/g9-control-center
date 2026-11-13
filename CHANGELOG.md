@@ -12,7 +12,7 @@
   - instant vibration in Android mode;
   - factory defaults, followed by an automatic restore from the backup.
   
-  What passes is unlocked on your tablet. Please **send the results**: they decide whether it is enabled for everyone.
+  What passes is unlocked on your tablet **when you send the results** (*Send and unlock*): they decide whether it is enabled for everyone.
 
 ## 0.11.0‑beta.1 — 2026‑11‑13 (test version)
 

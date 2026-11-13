@@ -116,7 +116,7 @@ On a supported controller with functions not yet confirmed on that model (G9 (20
 2. resets the controller to factory defaults, records what it stores and restores your whole configuration from the backup;
 3. switches the controller to DS5 and brings it back to Android by itself (allow the USB permission if Android asks).
 
-What passes is unlocked on your tablet (DS5 button, tile and widget, and vibration buttons). Please send the results.
+What passes is unlocked on your tablet (DS5 button, tile and widget, and vibration buttons) **when you send the results** with *Send and unlock*. You can also send them later from the band.
 
 ## Updating the app
 

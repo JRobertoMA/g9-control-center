@@ -116,7 +116,7 @@ En un mando soportado con funciones aún sin confirmar en ese modelo (G9 (2025) 
 2. restablece el mando a los valores de fábrica, anota lo que guarda y restaura toda tu configuración desde el respaldo;
 3. pasa el mando a DS5 y lo devuelve solo a Android (acepta el permiso USB si Android lo pide).
 
-Lo que funcione se desbloquea en tu tablet (botón, mosaico y widget de DS5, y botones de vibrar). Envía los resultados, por favor.
+Lo que funcione se desbloquea en tu tablet (botón, mosaico y widget de DS5, y botones de vibrar) **al enviar los resultados** con *Enviar y desbloquear*. También puedes enviarlos después desde la banda.
 
 ## Actualizar la app
 
