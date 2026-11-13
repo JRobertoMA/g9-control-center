@@ -19,7 +19,7 @@ The source code is not published for now.
 
 | Version | File | SHA‑256 |
 |---|---|---|
-| 0.11.0‑beta.1 (test version) | `G9Control-0.11.0-beta.1.apk` (in *Releases*) | `104274a61306c9842daf4e0d5a4f4a2ed40d4f4f6df85a4bcc2f91a7b691b03c` |
+| 0.11.0‑beta.2 (test version) | `G9Control-0.11.0-beta.2.apk` (in *Releases*) | `e3a82a69a557da0797a637f1a86868a88f0e1c2dd67a1a12664fb2bcd302d690` |
 | **0.10.1 (stable)** | `G9Control-0.10.1.apk` (in *Releases*) | `5be166dfab273c57d941e3c40d7b89674aefa873e5177ba92aedff3fa5a5ae6b` |
 | 0.10.0 | `G9Control-0.10.0.apk` (in *Releases*) | `d9568324af7c3e8510960e8c10b88700f56f240c8a462734dbd082a2fecc69c2` |
 | 0.10.0‑beta.4 (test version) | `G9Control-0.10.0-beta.4.apk` (in *Releases*) | `f76295eddb5b8a4a04eed426c4da4a492ea9db012aa260336cdf408843a19bad` |
@@ -58,7 +58,7 @@ With that, each area is tested with you step by step before it is unlocked. Deta
 | Sticks & triggers | Inner/outer dead zones of each stick, start/end zones of each trigger, quick trigger, D‑pad diagonal lock, left stick ↔ D‑pad swap |
 | Vibration & lights | Grip vibration (levels 0–4); light rings (effect, color, saturation, brightness, speed); Home button light |
 | Buttons | Remap of the 4 back buttons (all at once), macros of up to 11 keys with press/hold mode and loop |
-| Controller | Information, switch to Xbox or DS5 mode (DS5 on the G9 2026), Quick Settings tiles, ABXY layout, named profiles, restore from backup, factory defaults |
+| Controller | Information, switch to Xbox or DS5 mode (DS5 on the G9 2026), Quick Settings tiles and home screen widget, pending tests for supported controllers, ABXY layout, named profiles, restore from backup, factory defaults |
 | Test | Calibration steps and full‑screen live view of sticks, triggers and buttons |
 | Tablet use | Optional: controller combos and an on‑screen handle to open notifications, quick settings, recents, home and back in full‑screen apps |
 

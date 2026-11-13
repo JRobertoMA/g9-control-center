@@ -52,7 +52,9 @@ En las secciones de ajustes, el botón flotante **Restaurar respaldo** (abajo a 
 ### Mando
 - **Información:** firmware, protocolo, fecha de fabricación e identificador del mando.
 - **Modo de conexión:** en el G9 2026, «Pasar a modo DS5» (el único modo en que los juegos hacen vibrar el mando; para volver, pulsa **Cambiar a modo Android**). También «Pasar a modo Xbox». En Xbox la app no puede configurar el mando ni devolverlo a Android. Para volver, mantén **Vista + Menú 2 s** dos veces (Xbox → DS5 → Android), o una vez y pulsa **Cambiar a modo Android** en la app. DS5 se alcanza desde Xbox con un Vista + Menú.
-- **Mosaicos de Ajustes rápidos:** añade *G9: Android*, *G9: DS5* y *G9: Xbox* al panel de Ajustes rápidos para cambiar de modo sin abrir la app. Cada uno indica si es el modo actual o si está disponible.
+- **Mosaicos de Ajustes rápidos:** añade *G9: Android*, *G9: DS5* y *G9: Xbox* al panel de Ajustes rápidos para cambiar de modo sin abrir la app. Cada uno indica si es el modo actual o si está disponible. Se actualizan solos con el panel abierto.
+- **Widget de la pantalla de inicio** *Modo del mando G9*: los mismos tres modos como botones en la pantalla de inicio (mantén pulsada la pantalla de inicio → Widgets → G9 Control).
+- **Abrir la app al conectar el mando** (activado por defecto): Android abre la app cada vez que el mando se conecta o cambia de modo, para darle el permiso USB. Si lo desactivas, la app vuelve sola al fondo. Tras un cambio desde un mosaico o el widget, siempre se queda en el fondo.
 - **Perfiles:** guarda la configuración actual con un nombre y aplícala cuando quieras. Se pueden exportar a un archivo e importar (por ejemplo, para compartirlos).
 - **Restaurar:** todo desde el último respaldo, o **valores de fábrica**: sticks 10–100, gatillos 5–95, vibración nivel 3, anillos de fábrica (cian en el G9 2026, multicolor en el G9 无极), Home blanco, distribución estándar y botones traseros sin asignar.
 - **Usar la tablet con el mando:** combinaciones del mando y asa en pantalla para abrir notificaciones, ajustes rápidos, recientes, inicio y atrás sin deslizar desde el borde (ver más abajo).
@@ -105,6 +107,16 @@ Si tu mando muestra la banda roja de «soporte experimental», pulsa en ella **P
 5. Te deja **enviar los resultados**.
 
 **Detener y restaurar** lo deja todo como estaba en cualquier momento. El paso del cambio de modo es opcional: para volver del modo Xbox, mantén Vista + Menú 2 s dos veces.
+
+### Pruebas pendientes (mandos soportados)
+
+En un mando soportado con funciones aún sin confirmar en ese modelo (G9 (2025) y G9 无极), una banda azul ofrece **Completar pruebas**. Con el mismo respaldo y la misma comprobación final que la prueba guiada:
+
+1. hace vibrar la empuñadura izquierda y después la derecha, y te pregunta si las notaste;
+2. restablece el mando a los valores de fábrica, anota lo que guarda y restaura toda tu configuración desde el respaldo;
+3. pasa el mando a DS5 y lo devuelve solo a Android (acepta el permiso USB si Android lo pide).
+
+Lo que funcione se desbloquea en tu tablet (botón, mosaico y widget de DS5, y botones de vibrar). Envía los resultados, por favor.
 
 ## Actualizar la app
 

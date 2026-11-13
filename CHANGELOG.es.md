@@ -2,6 +2,18 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.11.0‑beta.2 — 2026‑11‑13 (versión de prueba)
+
+- **Los mosaicos de Ajustes rápidos se actualizan solos:** tras pasar de Android a DS5 o al revés, ya no se quedan los dos «encendidos» hasta volver a abrir el panel.
+- **Widget de la pantalla de inicio** *Modo del mando G9*: tres botones (Android, DS5 y Xbox). Resalta el modo actual y se actualiza cuando el mando se conecta o cambia de modo.
+- **La app ya no salta al frente** tras cambiar de modo desde un mosaico o el widget. Interruptor nuevo en **Mando → Modo de conexión**: «Abrir la app al conectar el mando» (activado por defecto). Si lo desactivas, Android sigue abriendo la app un momento para darle el permiso USB, y la app vuelve sola al fondo.
+- **Pruebas pendientes** para el G9 (2025) y el G9 无极: una banda azul ofrece probar lo que aún no está confirmado en esos modelos, en un minuto:
+  - pasar a DS5 y volver desde la app;
+  - vibración inmediata en modo Android;
+  - valores de fábrica, con restauración automática desde el respaldo.
+  
+  Lo que funcione se desbloquea en tu tablet. **Envía los resultados**: deciden si se activa para todos.
+
 ## 0.11.0‑beta.1 — 2026‑11‑13 (versión de prueba)
 
 Ideas tomadas de [Consolize](https://github.com/sudo-diego/Consolize), probadas en el G9 2026:

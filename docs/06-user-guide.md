@@ -52,7 +52,9 @@ In the settings sections, the floating **Restore backup** button (bottom right) 
 ### Controller
 - **Information:** firmware, protocol, manufacturing date and controller identifier.
 - **Connection mode:** on the G9 2026, “Switch to DS5 mode” (the only mode in which games make the controller vibrate; tap **Switch to Android mode** to come back). Also “Switch to Xbox mode”. In Xbox the app can neither configure the controller nor switch it back to Android. To return, hold **View + Menu for 2 s** twice (Xbox → DS5 → Android), or once and then tap **Switch to Android mode** in the app. DS5 is reached from Xbox with one View + Menu.
-- **Quick Settings tiles:** add *G9: Android*, *G9: DS5* and *G9: Xbox* to the Quick Settings panel to switch modes without opening the app. Each shows whether it is the current mode or available.
+- **Quick Settings tiles:** add *G9: Android*, *G9: DS5* and *G9: Xbox* to the Quick Settings panel to switch modes without opening the app. Each shows whether it is the current mode or available, and they update by themselves while the panel is open.
+- **Home screen widget** *G9 controller mode*: the same three modes as buttons on the home screen (long‑press the home screen → Widgets → G9 Control).
+- **Open the app when the controller connects** (on by default): Android opens the app each time the controller connects or changes mode, to give it USB permission. Turn it off and the app goes back to the background by itself. After a switch from a tile or the widget it always stays in the background.
 - **Profiles:** save the current configuration with a name and apply it whenever you want. Profiles can be exported to a file and imported (for example, to share them).
 - **Restore:** everything from the latest backup, or **factory defaults**: sticks 10–100, triggers 5–95, vibration level 3, factory rings (cyan on the G9 2026, multicolor on the G9 无极), white Home, standard layout and back buttons unassigned.
 - **Using the tablet with the controller attached:** controller combos and an on‑screen handle to open notifications, quick settings, recents, home and back without swiping from the edge (see below).
@@ -105,6 +107,16 @@ If your controller shows the red “experimental support” band, tap **Guided t
 5. Lets you **send the results**.
 
 **Stop and restore** puts everything back at any moment. The mode‑switch step is optional: to return from Xbox mode, hold View + Menu for 2 s twice.
+
+### Pending tests (supported controllers)
+
+On a supported controller with functions not yet confirmed on that model (G9 (2025) and G9 无极), a blue band offers **Complete tests**. With the same backup and final check as the guided test, it:
+
+1. makes the left grip vibrate and then the right one, and asks you whether you felt them;
+2. resets the controller to factory defaults, records what it stores and restores your whole configuration from the backup;
+3. switches the controller to DS5 and brings it back to Android by itself (allow the USB permission if Android asks).
+
+What passes is unlocked on your tablet (DS5 button, tile and widget, and vibration buttons). Please send the results.
 
 ## Updating the app
 

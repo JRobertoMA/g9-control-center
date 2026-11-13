@@ -2,6 +2,18 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.11.0‑beta.2 — 2026‑11‑13 (test version)
+
+- **Quick Settings tiles update by themselves:** after switching between Android and DS5, the tiles no longer both stay “on” until you reopen the panel.
+- **Home screen widget** *G9 controller mode*: three buttons (Android, DS5, Xbox). The current mode is highlighted, and the widget updates when the controller connects or changes mode.
+- **The app no longer jumps to the front** after switching modes from a tile or the widget. New switch in **Controller → Connection mode**: “Open the app when the controller connects” (on by default). When it is off, Android still opens the app for a moment to give it USB permission, and the app goes straight back to the background.
+- **Pending tests** for the G9 (2025) and the G9 无极: a blue band offers to test what is not confirmed on those models yet, which takes about a minute:
+  - switching to DS5 and back from the app;
+  - instant vibration in Android mode;
+  - factory defaults, followed by an automatic restore from the backup.
+  
+  What passes is unlocked on your tablet. Please **send the results**: they decide whether it is enabled for everyone.
+
 ## 0.11.0‑beta.1 — 2026‑11‑13 (test version)
 
 Ideas taken from [Consolize](https://github.com/sudo-diego/Consolize), tested on the G9 2026:
