@@ -700,7 +700,7 @@ const ISO_CSS = `
 
 // ---- G9 Control: la trama recorre pantalla, carril y empuñadura; la barra LED cambia al llegar
 const P = {"origin":[300,183.51102714714037],"scale":1.2233607970950269,"azimuth":38,"elevation":33};
-const LEGS = [{"name":"screen","points":[[46,22,9.2],[46,8,9.2],[-84,8,9.2]]},{"name":"rail","points":[[-93.9,58.5,11],[92.8,58.5,11]]},{"name":"grip","points":[[97,55.5,16.4],[111,55.5,16.4],[111,46,16.4],[116.4,46,16.4]]}];
+const LEGS = [{"name":"screen","points":[[58,26.5,9.2],[93,26.5,9.2]]},{"name":"grip","points":[[96.5,30,16.4],[111,30,16.4],[111,46,16.4],[116.4,46,16.4]]}];
 const HUES = [192,127,0,44];
 const RGB = {"0":"#fa0f0f","44":"#f2fa0f","127":"#0ffaf7","192":"#890ffa"};
 const FRAMES = {"0":"05 0C 0C 01 02 00 64 64 01 80 80 E9","44":"05 0C 0C 01 02 2C 64 64 01 80 80 15","127":"05 0C 0C 01 02 7F 64 64 01 80 80 68","192":"05 0C 0C 01 02 C0 64 64 01 80 80 A9"};
@@ -714,8 +714,8 @@ const pointAt = (pts, d) => {
   }
   return pts[pts.length - 1];
 };
-const GAP = 10, SPEED = 110;
-// Tramos con un hueco entre ellos (la trama pasa por dentro de la pinza y de la empuñadura)
+const GAP = 10, SPEED = 65;
+// Tramos con un hueco entre ellos (la trama pasa por el conector, dentro de la empuñadura)
 const SPANS = []; let acc = 0;
 for (const leg of LEGS) { const len = lengthOf(leg.points); SPANS.push({ leg, from: acc, to: acc + len }); acc += len + GAP; }
 const TOTAL = acc - GAP;
