@@ -698,24 +698,27 @@ const ISO_CSS = `
 `;
 
 
-// ---- G9 Control: la trama recorre la pantalla y la empuñadura; el anillo cambia al llegar
-const P = {"origin":[300,182.41159578805036],"scale":1.4148160478476999,"azimuth":40,"elevation":32};
-const LEGS = {"screen":[[39,22,12.2],[39,0,12.2],[62,0,12.2]],"grip":[[79,0,17.4],[82,0,17.4],[82,31,17.4],[95,31,17.4],[95,25.2,17.4]]};
-const HUES = [127,0,44,192];
+// ---- G9 Control: la trama recorre pantalla, carril y empuñadura; la barra LED cambia al llegar
+const P = {"origin":[300,183.51102714714037],"scale":1.2233607970950269,"azimuth":38,"elevation":33};
+const LEGS = [{"name":"screen","points":[[46,22,9.2],[46,8,9.2],[-84,8,9.2]]},{"name":"rail","points":[[-93.9,58.5,11],[92.8,58.5,11]]},{"name":"grip","points":[[97,55.5,16.4],[111,55.5,16.4],[111,46,16.4],[116.4,46,16.4]]}];
+const HUES = [192,127,0,44];
 const RGB = {"0":"#fa0f0f","44":"#f2fa0f","127":"#0ffaf7","192":"#890ffa"};
 const FRAMES = {"0":"05 0C 0C 01 02 00 64 64 01 80 80 E9","44":"05 0C 0C 01 02 2C 64 64 01 80 80 15","127":"05 0C 0C 01 02 7F 64 64 01 80 80 68","192":"05 0C 0C 01 02 C0 64 64 01 80 80 A9"};
-const WORD = { en: "ring", es: "anillo" };
+const WORD = {"en":"strip 2","es":"tira 2"};
 const lengthOf = (pts) => pts.slice(1).reduce((s, p, i) => s + Math.hypot(p[0] - pts[i][0], p[1] - pts[i][1]), 0);
 const pointAt = (pts, d) => {
   for (let i = 1; i < pts.length; i++) {
     const a = pts[i - 1], b = pts[i], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
-    if (d <= len || i === pts.length - 1) { const t = Math.min(1, d / len); return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2]]; }
+    if (d <= len || i === pts.length - 1) { const t = len ? Math.min(1, d / len) : 1; return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2]]; }
     d -= len;
   }
   return pts[pts.length - 1];
 };
-const L1 = lengthOf(LEGS.screen), L2 = lengthOf(LEGS.grip), GAP = 10, SPEED = 80;
-const TOTAL = L1 + GAP + L2;
+const GAP = 10, SPEED = 110;
+// Tramos con un hueco entre ellos (la trama pasa por dentro de la pinza y de la empuñadura)
+const SPANS = []; let acc = 0;
+for (const leg of LEGS) { const len = lengthOf(leg.points); SPANS.push({ leg, from: acc, to: acc + len }); acc += len + GAP; }
+const TOTAL = acc - GAP;
 const still = matchMedia("(prefers-reduced-motion: reduce)");
 const dark = matchMedia("(prefers-color-scheme: dark)");
 const wrap = document.querySelector(".g9-iso");
@@ -725,21 +728,21 @@ for (const stage of document.querySelectorAll(".g9fig")) {
   const lang = stage.dataset.lang === "es" ? "es" : "en";
   const plate = stage.closest(".iso-plate");
   const readout = plate.querySelector("[data-readout]");
-  const [onScreen, onGrip] = ["screen", "grip"].map((leg) => stage.querySelector('[data-part="packet"][data-leg="' + leg + '"]'));
+  const slots = Object.fromEntries(LEGS.map((leg) => [leg.name, stage.querySelector('[data-part="packet"][data-leg="' + leg.name + '"]')]));
   const swatches = [...stage.querySelectorAll('[data-part="swatch"]')];
   let index = 0, shown = HUES[0], travel = -1, frame = 0, last = 0, visible = false, idle = 0, tourTimer = 0;
   const pick = (h) => swatches.forEach((s) => s.toggleAttribute("data-on", Number(s.dataset.hue) === h));
   const say = (h) => { const t = WORD[lang] + " H " + h + " · " + FRAMES[h]; if (readout.textContent !== t) readout.textContent = t; };
-  const place = (el, p, on) => { el.style.opacity = on ? "1" : "0"; if (on) el.setAttribute("transform", translateAlong(P, p)); };
   const arrive = (h) => { shown = h; stage.style.setProperty("--ring", RGB[h]); say(h); };
   swatches.forEach((s) => s.style.setProperty("--sw", RGB[s.dataset.hue]));
   pick(shown);
   stage.style.setProperty("--ring", RGB[shown]);
   function draw() {
-    if (travel < 0) { place(onScreen, [0, 0, 0], false); place(onGrip, [0, 0, 0], false); return; }
-    if (travel <= L1) { place(onScreen, pointAt(LEGS.screen, travel), true); place(onGrip, [0, 0, 0], false); }
-    else if (travel < L1 + GAP) { place(onScreen, [0, 0, 0], false); place(onGrip, [0, 0, 0], false); }
-    else { place(onScreen, [0, 0, 0], false); place(onGrip, pointAt(LEGS.grip, travel - L1 - GAP), true); }
+    for (const span of SPANS) {
+      const el = slots[span.leg.name], on = travel >= span.from && travel <= span.to;
+      el.style.opacity = on ? "1" : "0";
+      if (on) el.setAttribute("transform", translateAlong(P, pointAt(span.leg.points, travel - span.from)));
+    }
   }
   function tick(now) {
     const dt = last ? Math.min((now - last) / 1000, 1 / 30) : 1 / 60;
@@ -766,7 +769,7 @@ for (const stage of document.querySelectorAll(".g9fig")) {
   stage.addEventListener("click", () => { idle = Date.now(); send(); });
   stage.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); idle = Date.now(); send(); } });
   // Para revisar fotogramas concretos (verificación): coloca la trama en un punto del recorrido, sin animar
-  stage.g9Pose = (t) => { travel = t; draw(); return TOTAL; };
+  stage.g9Pose = (t) => { clearTimeout(tourTimer); travel = t; draw(); return TOTAL; };
   new IntersectionObserver((entries) => { visible = entries[entries.length - 1].isIntersecting; if (visible) { run(); scheduleTour(); } }, { rootMargin: "80px 0px" }).observe(stage);
   draw();
 }

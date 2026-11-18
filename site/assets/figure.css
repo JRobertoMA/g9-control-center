@@ -119,20 +119,20 @@
 }}
 .g9-iso{--anatomy-card:#171d24;--anatomy-page:#0f1317}
 @media (prefers-color-scheme:light){.g9-iso:not([data-theme="dark"]){--anatomy-card:#ffffff;--anatomy-page:#f6f8fa}}
-.g9-iso[data-theme="light"]{--anatomy-card:#ffffff;--anatomy-page:#f6f8fa}
 .g9-iso .iso-figure{margin:0}
 .g9-iso .iso-plate{padding:46px 14px}
 .g9-iso .iso-legend{font-size:.9rem}
 .g9-iso .iso-plate-corner[data-corner="readout"]{max-width:calc(100% - 12px);overflow:hidden;text-overflow:ellipsis}
-.g9fig{cursor:pointer;outline-offset:4px;border-radius:6px;--ring:#0ffaf7}
+.g9fig{cursor:pointer;outline-offset:4px;border-radius:6px;--ring:#890ffa;--left:#0ffaf7}
 .g9fig .g9-blur{filter:blur(3px)}
 .g9fig .g9-off{opacity:0}
 .g9fig:focus-visible{outline:2px solid #33d6d3}
-.g9fig [data-part="screen"] .iso-fill{fill:var(--g9-screen,#0b0f13)}
+.g9fig [data-part="screen"] .iso-fill{fill:#0b0f13}
 .g9-iso[data-theme="light"] .g9fig [data-part="screen"] .iso-fill{fill:#1c242c}
 .g9fig [data-part="swatch"] .iso-fill,.g9fig [data-part="swatch"] .iso-top,.g9fig [data-part="swatch"] .iso-shade{fill:var(--sw)}
 .g9fig .sw-pick{fill:none;stroke:none;stroke-width:.9}
 .g9fig [data-part="swatch"][data-on] .sw-pick{stroke:#fff}
-.g9fig [data-part="ring"] .iso-top,.g9fig [data-part="ring"] .iso-shade,.g9fig [data-part="ring"] .iso-fill{fill:var(--ring);transition:fill .45s cubic-bezier(.23,1,.32,1)}
-.g9fig [data-part="ring"] .iso-shade[data-shade="0"],.g9fig [data-part="ring"] .iso-shade[data-shade="1"]{filter:brightness(.78)}
-@media (prefers-reduced-motion:reduce){.g9fig [data-part="ring"] .iso-top,.g9fig [data-part="ring"] .iso-shade,.g9fig [data-part="ring"] .iso-fill{transition:none}}
+.g9fig [data-part="bar"] .iso-top,.g9fig [data-part="bar"] .iso-shade,.g9fig [data-part="bar"] .iso-fill{fill:var(--ring)}
+.g9fig [data-part="bar-left"] .iso-top,.g9fig [data-part="bar-left"] .iso-shade,.g9fig [data-part="bar-left"] .iso-fill{fill:var(--left)}
+.g9fig [data-part="bar"] .iso-fill,.g9fig [data-part="bar"] .iso-top,.g9fig [data-part="bar"] .iso-shade{transition:fill .45s cubic-bezier(.23,1,.32,1)}
+@media (prefers-reduced-motion:reduce){.g9fig [data-part="bar"] .iso-fill,.g9fig [data-part="bar"] .iso-top,.g9fig [data-part="bar"] .iso-shade{transition:none}}
