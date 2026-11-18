@@ -6,6 +6,8 @@
 
 App Android ligera y **no oficial** para configurar el **Lenovo Legion Gaming Controller G9 2026, G9 (2025) y G9 无极 (Wuji)** (USB `3537:1136`, `3537:1134` y `3537:1161`) conectado por USB‑C a una tablet Android. Es una alternativa a la app oficial *Ultra Control* que solo incluye la configuración del mando: sin cuentas, sin publicidad y sin analíticas. Solo se conecta a internet cuando tú lo pides: para **enviar un diagnóstico** o para **buscar actualizaciones de la app** ([política de privacidad](PRIVACIDAD.md)). La app está en **inglés, español y chino simplificado (简体中文)**, según el idioma del sistema.
 
+**Web:** [jrobertoma.github.io/g9-control-center/es](https://jrobertoma.github.io/g9-control-center/es/)
+
 Este repositorio contiene:
 
 - la **app compilada** (sección *Releases*);
@@ -80,6 +82,10 @@ Cada cambio se escribe en el mando, se confirma y **se vuelve a leer para verifi
 | [Fallos y limitaciones](docs/es/05-fallos-y-limitaciones.md) | Comportamientos anómalos del firmware y cómo evitarlos |
 
 Leyenda de estado en los documentos: ✅ verificado en el mando · 🔍 deducido, sin verificar · ❌ no soportado.
+
+## Apoya el proyecto
+
+G9 Control es gratis y lo seguirá siendo. Si quieres agradecerlo, puedes [apoyarlo por PayPal](https://paypal.me/jrobertoma). Es totalmente opcional y no desbloquea nada. Enviar diagnósticos de un mando experimental ayuda igual.
 
 ## Licencia
 

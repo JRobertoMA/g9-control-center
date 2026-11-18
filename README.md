@@ -6,6 +6,8 @@
 
 A lightweight, **unofficial** Android app to configure the **Lenovo Legion Gaming Controller G9 2026, G9 (2025) and G9 无极 (Wuji)** (USB `3537:1136`, `3537:1134` and `3537:1161`) connected over USB‑C to an Android tablet. It is an alternative to the official *Ultra Control* app that only does controller configuration: no accounts, no ads and no analytics. It only connects to the internet when you ask it to: to **send diagnostics** or to **check for app updates** ([privacy policy](PRIVACY.md)). The app is in **English, Spanish and Simplified Chinese (简体中文)**, following the system language.
 
+**Website:** [jrobertoma.github.io/g9-control-center](https://jrobertoma.github.io/g9-control-center/)
+
 This repository contains:
 
 - the **compiled app** (*Releases* section);
@@ -80,6 +82,10 @@ Every change is written to the controller, acknowledged and **read back to verif
 | [Firmware issues and limitations](docs/05-firmware-issues-and-limitations.md) | Abnormal firmware behavior and how to avoid it |
 
 Status legend in the documents: ✅ verified on the controller · 🔍 inferred, not verified · ❌ not supported.
+
+## Support the project
+
+G9 Control is free and will stay free. If you want to say thanks, you can [support it through PayPal](https://paypal.me/jrobertoma). It’s completely optional and doesn’t unlock anything. Sending diagnostics from an experimental controller helps just as much.
 
 ## License
 

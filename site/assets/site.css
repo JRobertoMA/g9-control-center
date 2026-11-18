@@ -1,0 +1,457 @@
+/* G9 Control · web pública (GitHub Pages). Sin frameworks, sin fuentes externas, sin scripts de terceros.
+   Pautas: modern-web-guidance (color-scheme, clamp() con rem, fetchpriority, foco visible, reduced motion),
+   mobile-native (hover solo con ratón, sin destello de toque, svh) y emil-design-eng (pulsado con escala corta). */
+
+:root {
+  color-scheme: light dark;
+
+  /* Colores del icono de la app */
+  --brand-ink: #151a20;
+  --brand-teal: #33d6d3;
+
+  --bg: light-dark(#f6f8fa, #0f1317);
+  --surface: light-dark(#ffffff, #171d24);
+  --surface-2: light-dark(#eef2f5, #1e262f);
+  --text: light-dark(#151a20, #e8edf2);
+  --text-muted: light-dark(#4a5562, #a7b3c0);
+  --border: light-dark(#cfd8e0, #2c3742);
+  /* El turquesa sobre fondo claro no llega a 4.5:1: en claro se usa uno más oscuro */
+  --accent: light-dark(#0b7c7a, var(--brand-teal));
+  --accent-ink: light-dark(#ffffff, #071615);
+  --focus: light-dark(#0b7c7a, #7ff0ee);
+
+  --radius: 1rem;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --measure: 70ch;
+
+  accent-color: var(--accent);
+  scrollbar-color: var(--text-muted) var(--bg);
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  line-height: 1.6;
+}
+
+img,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+:where(a:any-link, button, summary):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+.wrap {
+  inline-size: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: 1rem;
+  inset-block-start: -10rem;
+  padding: 0.5rem 1rem;
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.skip-link:focus-visible {
+  inset-block-start: 1rem;
+}
+
+/* ---------- Cabecera ---------- */
+
+.site-header {
+  border-block-end: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-block: 0.75rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.brand img {
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding-block: 0.4rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---------- Botones ---------- */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-block-size: 3rem;
+  padding: 0.75rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-weight: 650;
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: transform 120ms var(--ease-out), background-color 150ms ease, border-color 150ms ease;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.button-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.button-secondary {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.button-paypal {
+  background: #ffc439;
+  color: #111;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-primary:hover {
+    background: light-dark(#096664, #5be3e0);
+  }
+
+  .button-secondary:hover {
+    border-color: var(--text-muted);
+  }
+
+  .button-paypal:hover {
+    background: #f2b81f;
+  }
+
+  .site-nav a:hover {
+    color: var(--text);
+  }
+}
+
+/* ---------- Portada ---------- */
+
+.hero {
+  padding-block: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+}
+
+.hero .wrap {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 60em) {
+  .hero .wrap {
+    grid-template-columns: 1fr 1.15fr;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 1.6rem + 2.5vw, 3.6rem);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.lead {
+  max-inline-size: 38rem;
+  margin: 1rem 0 1.75rem;
+  color: var(--text-muted);
+  font-size: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
+  text-wrap: pretty;
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.release-meta {
+  margin: 1rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.hero-media {
+  margin: 0;
+}
+
+.hero-media img,
+.shots img {
+  display: block;
+  inline-size: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+/* Entrada suave de la portada, solo si el sistema no pide reducir movimiento */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-media {
+    animation: rise 600ms var(--ease-out) both;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 0.75rem;
+  }
+}
+
+/* ---------- Secciones ---------- */
+
+section {
+  padding-block: clamp(2.5rem, 1.75rem + 3vw, 4.5rem);
+}
+
+section:nth-of-type(even) {
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.3rem);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+}
+
+.section-intro {
+  max-inline-size: var(--measure);
+  margin: 0 0 2rem;
+  color: var(--text-muted);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+section:nth-of-type(odd) .card {
+  background: var(--surface);
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* ---------- Tabla de mandos ---------- */
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 0.9rem 1rem 0;
+  text-align: start;
+  color: var(--text-muted);
+}
+
+th,
+td {
+  padding: 0.8rem 1rem;
+  text-align: start;
+  vertical-align: top;
+  border-block-end: 1px solid var(--border);
+}
+
+tbody tr:last-child > * {
+  border-block-end: 0;
+}
+
+th[scope="row"] {
+  font-weight: 600;
+}
+
+.status {
+  white-space: nowrap;
+}
+
+/* ---------- Capturas ---------- */
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shots figure {
+  margin: 0;
+}
+
+.shots figcaption {
+  margin-block-start: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- Instalar ---------- */
+
+.steps {
+  max-inline-size: var(--measure);
+  padding-inline-start: 1.25rem;
+}
+
+.steps li + li {
+  margin-block-start: 0.6rem;
+}
+
+.note {
+  max-inline-size: var(--measure);
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid var(--accent);
+  border-radius: 0.5rem;
+  background: var(--surface-2);
+}
+
+/* ---------- Apoyo ---------- */
+
+.support {
+  max-inline-size: 44rem;
+}
+
+.support .button {
+  margin-block: 0.5rem 1rem;
+}
+
+.fine {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- Pie ---------- */
+
+.site-footer {
+  padding-block: 2rem 3rem;
+  border-block-start: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.site-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer a {
+  display: inline-block;
+  padding-block: 0.25rem;
+}
+
+@media (forced-colors: active) {
+  .button {
+    border-color: ButtonText;
+  }
+}
