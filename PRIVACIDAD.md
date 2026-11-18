@@ -19,7 +19,7 @@ No sale nada de la tablet hasta que pulses **Enviar**.
 |---|---|
 | Mando | Modelo, modo de conexión, ID de fabricante y de producto USB y su nombre, fabricante, y sus interfaces USB (clase y endpoints) |
 | Dispositivos de audio | El tipo y el nombre de los dispositivos de audio que ve Android (por ejemplo «auriculares USB»), para revisar el jack del mando |
-| Tablet y app | Versión de Android, marca y modelo de la tablet, versión de G9 Control |
+| Tablet y app | Versión de Android, marca y modelo de la tablet, versión de G9 Control, los primeros caracteres de la huella del certificado de firma de la app (para distinguir la app oficial de copias modificadas) y la app que la instaló (por ejemplo, un navegador o una tienda de apps) |
 | Configuración del mando | Todo lo que leyó la app (zonas muertas, luces, remapeos, macros…), **sin el ID de chip del mando** |
 | Registro de la sesión | El tráfico de la app con el mando, **sin las líneas del ID de chip** |
 | Contacto | Solo si escribiste uno: el tipo (Reddit, Telegram o correo) y tu usuario o dirección |

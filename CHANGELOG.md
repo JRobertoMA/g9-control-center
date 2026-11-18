@@ -2,6 +2,20 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.11.0 — 2026‑11‑17 (stable)
+
+Everything from the two 0.11.0 test versions, plus:
+
+- **Simplified Chinese (简体中文).** The app follows the system language, or you can choose it in Settings → Apps → G9 Control → Language.
+- **Diagnostics include the app’s signature and installer.** These help tell the official app from modified copies. Unofficial modified APKs don’t receive updates, so download G9 Control only from this repository.
+
+New since 0.10.1, if you’re coming from the stable version:
+
+- **Switch to DS5 mode from the app** (G9 2026). DS5 is the only mode in which games make the controller vibrate, and the app switches it back to Android.
+- **Test vibration in Android mode** (G9 2026).
+- **Quick Settings tiles and a home screen widget** to switch modes without opening the app. They update by themselves, and the app no longer jumps to the front after a switch. New switch: “Open the app when the controller connects”.
+- **Pending tests** for the G9 (2025) and the G9 无极: switching to DS5, instant vibration and factory defaults with automatic restore. What passes is unlocked when you send the results.
+
 ## 0.11.0‑beta.2 — 2026‑11‑13 (test version)
 
 - **Quick Settings tiles update by themselves:** after switching between Android and DS5, the tiles no longer both stay “on” until you reopen the panel.

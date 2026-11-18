@@ -4,7 +4,7 @@
 
 [English](README.md) · **Español**
 
-App Android ligera y **no oficial** para configurar el **Lenovo Legion Gaming Controller G9 2026, G9 (2025) y G9 无极 (Wuji)** (USB `3537:1136`, `3537:1134` y `3537:1161`) conectado por USB‑C a una tablet Android. Es una alternativa a la app oficial *Ultra Control* que solo incluye la configuración del mando: sin cuentas, sin publicidad y sin analíticas. Solo se conecta a internet cuando tú lo pides: para **enviar un diagnóstico** o para **buscar actualizaciones de la app** ([política de privacidad](PRIVACIDAD.md)). La app está en **inglés y español**, según el idioma del sistema.
+App Android ligera y **no oficial** para configurar el **Lenovo Legion Gaming Controller G9 2026, G9 (2025) y G9 无极 (Wuji)** (USB `3537:1136`, `3537:1134` y `3537:1161`) conectado por USB‑C a una tablet Android. Es una alternativa a la app oficial *Ultra Control* que solo incluye la configuración del mando: sin cuentas, sin publicidad y sin analíticas. Solo se conecta a internet cuando tú lo pides: para **enviar un diagnóstico** o para **buscar actualizaciones de la app** ([política de privacidad](PRIVACIDAD.md)). La app está en **inglés, español y chino simplificado (简体中文)**, según el idioma del sistema.
 
 Este repositorio contiene:
 
@@ -19,8 +19,8 @@ El código fuente no se publica por ahora.
 
 | Versión | Archivo | SHA‑256 |
 |---|---|---|
-| 0.11.0‑beta.2 (versión de prueba) | `G9Control-0.11.0-beta.2.apk` (en *Releases*) | `c0d89af9af3388ff3e71180e6996f0cfb257c84b09d25be32c537fea939cab1b` |
-| **0.10.1 (estable)** | `G9Control-0.10.1.apk` (en *Releases*) | `5be166dfab273c57d941e3c40d7b89674aefa873e5177ba92aedff3fa5a5ae6b` |
+| **0.11.0 (estable)** | `G9Control-0.11.0.apk` (en *Releases*) | `fa020631c0f0d9b3ec4f7c19cc51d241660a7c8760effe319a6defbe1a90cec7` |
+| 0.10.1 | `G9Control-0.10.1.apk` (en *Releases*) | `5be166dfab273c57d941e3c40d7b89674aefa873e5177ba92aedff3fa5a5ae6b` |
 | 0.10.0 | `G9Control-0.10.0.apk` (en *Releases*) | `d9568324af7c3e8510960e8c10b88700f56f240c8a462734dbd082a2fecc69c2` |
 | 0.10.0‑beta.4 (versión de prueba) | `G9Control-0.10.0-beta.4.apk` (en *Releases*) | `f76295eddb5b8a4a04eed426c4da4a492ea9db012aa260336cdf408843a19bad` |
 | 0.8.0 | `G9Control-0.8.0.apk` (en *Releases*) | `b004fc7c4bffaa020eb291a90c79106455aa28b3ce7489be17fb71e564b513df` |

@@ -2,6 +2,20 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.11.0 — 2026‑11‑17 (estable)
+
+Todo lo de las dos versiones de prueba 0.11.0, y además:
+
+- **Chino simplificado (简体中文).** La app sigue el idioma del sistema, o puedes elegirlo en Ajustes → Apps → G9 Control → Idioma.
+- **El diagnóstico incluye la firma de la app y quién la instaló.** Sirven para distinguir la app oficial de copias modificadas. Las APK modificadas no reciben actualizaciones: descarga G9 Control solo de este repositorio.
+
+Novedades desde la 0.10.1, si vienes de la versión estable:
+
+- **Pasar a modo DS5 desde la app** (G9 2026). DS5 es el único modo en que los juegos hacen vibrar el mando, y la app lo devuelve a Android.
+- **Probar la vibración en modo Android** (G9 2026).
+- **Mosaicos de Ajustes rápidos y widget** para cambiar de modo sin abrir la app. Se actualizan solos, y la app ya no salta al frente tras el cambio. Interruptor nuevo: «Abrir la app al conectar el mando».
+- **Pruebas pendientes** para el G9 (2025) y el G9 无极: pasar a DS5, vibración inmediata y valores de fábrica con restauración automática. Lo que funcione se desbloquea al enviar los resultados.
+
 ## 0.11.0‑beta.2 — 2026‑11‑13 (versión de prueba)
 
 - **Los mosaicos de Ajustes rápidos se actualizan solos:** tras pasar de Android a DS5 o al revés, ya no se quedan los dos «encendidos» hasta volver a abrir el panel.

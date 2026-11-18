@@ -19,7 +19,7 @@ Nothing leaves the tablet until you tap **Send**.
 |---|---|
 | Controller | Model, connection mode, USB vendor/product ID and name, manufacturer, and its USB interfaces (class and endpoints) |
 | Audio devices | The type and name of the audio devices Android sees (for example “USB headset”), to check the controller’s headphone jack |
-| Tablet and app | Android version, tablet maker and model, G9 Control version |
+| Tablet and app | Android version, tablet maker and model, G9 Control version, the first characters of the app’s signing certificate fingerprint (to tell the official app from modified copies) and the app that installed it (for example a browser or an app store) |
 | Controller configuration | Everything the app read (dead zones, lights, remaps, macros…), **without the controller’s chip ID** |
 | Session log | The app’s traffic with the controller, **without the chip ID lines** |
 | Contact | Only if you typed one: the type (Reddit, Telegram or email) and your user or address |
