@@ -2,6 +2,14 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.11.1 — 2026‑11‑18 (estable)
+
+Gracias al primer usuario de un G9 (2025) que hizo las pruebas pendientes:
+
+- **G9 (2025): pasar a modo DS5, la vibración inmediata y los valores de fábrica quedan activados para todos.** Ya no hace falta hacer las pruebas pendientes.
+- Ya se conocen las luces de fábrica del G9 (2025) (son las mismas que en el G9 2026), y el restablecer de fábrica las comprueba.
+- Corregido: una línea inofensiva, «No enviado: 04 00 …», en el registro tras la prueba de vibración inmediata.
+
 ## 0.11.0 — 2026‑11‑17 (estable)
 
 Todo lo de las dos versiones de prueba 0.11.0, y además:

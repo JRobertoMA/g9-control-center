@@ -2,6 +2,14 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.11.1 — 2026‑11‑18 (stable)
+
+Thanks to the first G9 (2025) owner who ran the pending tests:
+
+- **G9 (2025): switching to DS5 mode, instant vibration and factory defaults are now enabled for everyone.** No need to run the pending tests anymore.
+- The G9 (2025) factory light settings are now known (the same as the G9 2026), and the factory reset checks them.
+- Fixed: a harmless “Not sent: 04 00 …” line in the log after the instant vibration test.
+
 ## 0.11.0 — 2026‑11‑17 (stable)
 
 Everything from the two 0.11.0 test versions, plus:
