@@ -5,6 +5,16 @@
 ## 0.11.3 — 2026‑11‑19 (estable)
 
 - **Nueva tarjeta «Acerca de»** al final de la pantalla Mando: la versión de la app, un enlace a la [web del proyecto](https://jrobertoma.github.io/g9-control-center/es/) y un enlace opcional para apoyar G9 Control por PayPal. El apoyo es voluntario y no desbloquea nada.
+- **Seguridad:** las órdenes que otras apps envían a G9 Control ya se ignoran (solo funcionan en las versiones de desarrollo), y la consola hex sigue la lista de comandos admitidos de cada mando, también la del G9 2026.
+- **Ventanas estrechas y fuente grande** (tablet en vertical, pantalla dividida, fuente del sistema más grande):
+  - la pantalla Avanzado pasa a una columna, así que la consola se puede usar;
+  - cada evento de macro ocupa dos filas, así que ya no se cortan los nombres de tecla ni los tiempos;
+  - el estado de arriba ocupa como mucho dos líneas, y del respaldo solo se muestra el nombre del archivo;
+  - la tarjeta del mando pone el dibujo encima de los datos.
+- **Corregido:**
+  - «Modo actual» decía Android con el mando en DS5;
+  - al cambiar el idioma con la app abierta, la tarjeta del mando ocultaba cuatro filas hasta la siguiente lectura;
+  - un efecto de luz que la app no conoce ahora muestra un aviso, en vez de no marcar nada.
 - Revisamos en el mando dos peticiones del hilo de XDA:
   - **Invertir los ejes de los sticks:** el firmware del G9 no lo admite (los comandos existen en el software de Lenovo, pero el mando los ignora). Usa la opción «invertir Y» de cada juego.
   - **Un botón trasero como atajo de Android:** no es fiable. El Home físico envía la misma tecla y los dobles toques rápidos se pierden. **Vista + B = Atrás** (combinaciones del modo tablet) sigue funcionando.

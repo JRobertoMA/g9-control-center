@@ -5,6 +5,16 @@
 ## 0.11.3 — 2026‑11‑19 (stable)
 
 - **New “About” card** at the end of the Controller screen: the app version, a link to the [project website](https://jrobertoma.github.io/g9-control-center/) and an optional link to support G9 Control through PayPal. Support is voluntary and doesn’t unlock anything.
+- **Security:** commands sent to G9 Control by other apps are now ignored (they only work in development builds), and the hex console follows each controller’s list of supported commands, the G9 2026 included.
+- **Narrow windows and large fonts** (tablet in portrait, split screen, bigger system font):
+  - the Advanced screen switches to one column, so the console is usable;
+  - each macro event takes two rows, so key names and times no longer get cut;
+  - the status line at the top takes two lines at most, and the backup shows only its file name;
+  - the controller card puts the drawing above the data.
+- **Fixed:**
+  - “Current mode” said Android while the controller was in DS5;
+  - changing the app language while it was open hid four rows of the controller card until the next read;
+  - a light effect the app doesn’t know now shows a note instead of no selection.
 - Looked into two requests from the XDA thread, tested on the controller:
   - **Inverting stick axes:** the G9 firmware doesn’t support it (the commands exist in Lenovo’s software, but the controller ignores them). Use each game’s “invert Y” option.
   - **A back button as an Android shortcut:** not reliable. The physical Home button sends the same key, and quick double presses get lost. **View + B = Back** (tablet shortcuts) still works.

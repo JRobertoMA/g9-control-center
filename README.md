@@ -21,7 +21,7 @@ The source code is not published for now.
 
 | Version | File | SHA‑256 |
 |---|---|---|
-| **0.11.3 (stable)** | `G9Control-0.11.3.apk` (in *Releases*) | `37551399fd07856b49f1c47b131850db425623cdd7c3939cdfc2f0809f2e13c3` |
+| **0.11.3 (stable)** | `G9Control-0.11.3.apk` (in *Releases*) | `6665d1d687eb2b58bd00e4b3c63c0682e8313d9c5f8d6f5abf5a34fd9c762563` |
 | 0.11.2 | `G9Control-0.11.2.apk` (in *Releases*) | `60ed698444eca4c4351682a4806857506c3007caeea51ef02e09d9528b5c4898` |
 | 0.11.1 | `G9Control-0.11.1.apk` (in *Releases*) | `25e001fb99443ebf6aa06933d55bad0adb40e6adab5765e847d21bc6f0061a79` |
 | 0.11.0 | `G9Control-0.11.0.apk` (in *Releases*) | `fa020631c0f0d9b3ec4f7c19cc51d241660a7c8760effe319a6defbe1a90cec7` |
