@@ -2,6 +2,13 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.11.2 — 2026‑11‑19 (estable)
+
+Gracias al primer usuario de un G9 无极 (Wuji) que hizo las pruebas pendientes:
+
+- **G9 无极: pasar a modo DS5, la vibración inmediata y los valores de fábrica quedan activados para todos.** Los tres G9 (2026, 2025 y 无极) tienen ya soporte completo, así que la banda de pruebas pendientes ya no aparece.
+- **Corregido: falso «no verificado» al ajustar una luz con poco brillo o poca saturación.** El mando guarda los colores en RGB, así que un color tenue solo se puede guardar de forma aproximada. La comprobación ya lo tiene en cuenta y sigue detectando los errores reales.
+
 ## 0.11.1 — 2026‑11‑18 (estable)
 
 Gracias al primer usuario de un G9 (2025) que hizo las pruebas pendientes:

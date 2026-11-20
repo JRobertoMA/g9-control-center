@@ -21,7 +21,8 @@ The source code is not published for now.
 
 | Version | File | SHA‑256 |
 |---|---|---|
-| **0.11.1 (stable)** | `G9Control-0.11.1.apk` (in *Releases*) | `25e001fb99443ebf6aa06933d55bad0adb40e6adab5765e847d21bc6f0061a79` |
+| **0.11.2 (stable)** | `G9Control-0.11.2.apk` (in *Releases*) | `60ed698444eca4c4351682a4806857506c3007caeea51ef02e09d9528b5c4898` |
+| 0.11.1 | `G9Control-0.11.1.apk` (in *Releases*) | `25e001fb99443ebf6aa06933d55bad0adb40e6adab5765e847d21bc6f0061a79` |
 | 0.11.0 | `G9Control-0.11.0.apk` (in *Releases*) | `fa020631c0f0d9b3ec4f7c19cc51d241660a7c8760effe319a6defbe1a90cec7` |
 | 0.10.1 | `G9Control-0.10.1.apk` (in *Releases*) | `5be166dfab273c57d941e3c40d7b89674aefa873e5177ba92aedff3fa5a5ae6b` |
 | 0.10.0 | `G9Control-0.10.0.apk` (in *Releases*) | `d9568324af7c3e8510960e8c10b88700f56f240c8a462734dbd082a2fecc69c2` |
@@ -61,7 +62,7 @@ With that, each area is tested with you step by step before it is unlocked. Deta
 | Sticks & triggers | Inner/outer dead zones of each stick, start/end zones of each trigger, quick trigger, D‑pad diagonal lock, left stick ↔ D‑pad swap |
 | Vibration & lights | Grip vibration (levels 0–4); light rings (effect, color, saturation, brightness, speed); Home button light |
 | Buttons | Remap of the 4 back buttons (all at once), macros of up to 11 keys with press/hold mode and loop |
-| Controller | Information, switch to Xbox or DS5 mode (DS5 on the G9 2026 and G9 (2025)), Quick Settings tiles and home screen widget, pending tests for supported controllers, ABXY layout, named profiles, restore from backup, factory defaults |
+| Controller | Information, switch to Xbox or DS5 mode (DS5 on the G9 2026, G9 (2025) and G9 无极), Quick Settings tiles and home screen widget, ABXY layout, named profiles, restore from backup, factory defaults |
 | Test | Calibration steps and full‑screen live view of sticks, triggers and buttons |
 | Tablet use | Optional: controller combos and an on‑screen handle to open notifications, quick settings, recents, home and back in full‑screen apps |
 

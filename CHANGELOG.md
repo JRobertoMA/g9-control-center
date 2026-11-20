@@ -2,6 +2,13 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.11.2 — 2026‑11‑19 (stable)
+
+Thanks to the first G9 无极 (Wuji) owner who ran the pending tests:
+
+- **G9 无极: switching to DS5 mode, instant vibration and factory defaults are now enabled for everyone.** All three G9 controllers (2026, 2025 and 无极) are now fully supported, so the pending tests band no longer appears.
+- **Fixed: false “not verified” when setting a light with low brightness or saturation.** The controller stores colors in RGB, so a dim color can only be stored approximately. The check now allows for that, and still catches real errors.
+
 ## 0.11.1 — 2026‑11‑18 (stable)
 
 Thanks to the first G9 (2025) owner who ran the pending tests:
