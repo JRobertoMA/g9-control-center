@@ -55,6 +55,7 @@ In the settings sections, the floating **Restore backup** button (bottom right) 
 - **Quick Settings tiles:** add *G9: Android*, *G9: DS5* and *G9: Xbox* to the Quick Settings panel to switch modes without opening the app. Each shows whether it is the current mode or available, and they update by themselves while the panel is open.
 - **Home screen widget** *G9 controller mode*: the same three modes as buttons on the home screen (long‑press the home screen → Widgets → G9 Control).
 - **Open the app when the controller connects** (on by default): Android opens the app each time the controller connects or changes mode, to give it USB permission. Turn it off and the app goes back to the background by itself. After a switch from a tile or the widget it always stays in the background.
+- **About** (at the end): the app version, the project website and an optional link to support it through PayPal. It only opens your browser.
 - **Profiles:** save the current configuration with a name and apply it whenever you want. Profiles can be exported to a file and imported (for example, to share them).
 - **Restore:** everything from the latest backup, or **factory defaults**: sticks 10–100, triggers 5–95, vibration level 3, factory rings (cyan on the G9 2026 and G9 (2025), multicolor on the G9 无极), white Home, standard layout and back buttons unassigned.
 - **Using the tablet with the controller attached:** controller combos and an on‑screen handle to open notifications, quick settings, recents, home and back without swiping from the edge (see below).

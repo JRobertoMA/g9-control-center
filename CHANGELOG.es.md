@@ -2,6 +2,13 @@
 
 [English](CHANGELOG.md) · **Español**
 
+## 0.11.3 — 2026‑11‑19 (estable)
+
+- **Nueva tarjeta «Acerca de»** al final de la pantalla Mando: la versión de la app, un enlace a la [web del proyecto](https://jrobertoma.github.io/g9-control-center/es/) y un enlace opcional para apoyar G9 Control por PayPal. El apoyo es voluntario y no desbloquea nada.
+- Revisamos en el mando dos peticiones del hilo de XDA:
+  - **Invertir los ejes de los sticks:** el firmware del G9 no lo admite (los comandos existen en el software de Lenovo, pero el mando los ignora). Usa la opción «invertir Y» de cada juego.
+  - **Un botón trasero como atajo de Android:** no es fiable. El Home físico envía la misma tecla y los dobles toques rápidos se pierden. **Vista + B = Atrás** (combinaciones del modo tablet) sigue funcionando.
+
 ## 0.11.2 — 2026‑11‑19 (estable)
 
 Gracias al primer usuario de un G9 无极 (Wuji) que hizo las pruebas pendientes:

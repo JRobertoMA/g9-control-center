@@ -2,6 +2,13 @@
 
 **English** · [Español](CHANGELOG.es.md)
 
+## 0.11.3 — 2026‑11‑19 (stable)
+
+- **New “About” card** at the end of the Controller screen: the app version, a link to the [project website](https://jrobertoma.github.io/g9-control-center/) and an optional link to support G9 Control through PayPal. Support is voluntary and doesn’t unlock anything.
+- Looked into two requests from the XDA thread, tested on the controller:
+  - **Inverting stick axes:** the G9 firmware doesn’t support it (the commands exist in Lenovo’s software, but the controller ignores them). Use each game’s “invert Y” option.
+  - **A back button as an Android shortcut:** not reliable. The physical Home button sends the same key, and quick double presses get lost. **View + B = Back** (tablet shortcuts) still works.
+
 ## 0.11.2 — 2026‑11‑19 (stable)
 
 Thanks to the first G9 无极 (Wuji) owner who ran the pending tests:
